@@ -1,0 +1,85 @@
+---
+title: "Classification1"
+editor: visual
+---
+
+## Summary
+
+### Classification and Regression Trees (CART)
+
+-   **classification trees**: classifying data into two or more discrete categories
+
+    -   impure: the mixture of categories among the final leaves
+
+    -   Gini impurity: measure the impurity of a group containing different classes
+
+        -   the one with the lowest impurity goes at the top of the tree
+
+        -   use it at each branch to split the nodes further
+
+-   **regression trees**: predict continuous dependent variable
+
+    -   residuals: to decide where the breaks in the data
+
+    -   sum of the squared residuals(SSR): the one with the lowest SSR is the root of the tree to start with.
+
+-   **overfitting:** One leaf with only one pixel value or one person, shows high variance, and does not generalize the model well.
+
+    -   underfitting: high bias, oversimplifies the model
+
+    -   solutions for overfitting:
+
+        -   limit how trees grow by removing the leaves in each tree
+
+        -   weakest line pruning with tree score
+
+    -   alpha: gives the lowest SSR form testing data is the final value
+
+### Random Forests
+
+-   grow many classification decision trees, which comprises the forest
+
+    -   two techniques:
+
+        -   bootstrapping(bagging): resampling with replacement. 70% of the training data is used in the bootstrap, 30% is left out of the bag(OOB).
+
+            -   OOB error: proportion of OOB incorrectly classified
+
+        -   random feature slection
+
+### Image Classification
+
+Turn every pixel in the image into one of a pre-defined categorical classification
+
+#### Unsupervised
+
+-   DBSCAN: radius and min points
+
+-   ISODATA: same as k-means but clusters with few pixels are meaningless, close clusters could be merged and could be split for elongated clusters
+
+-   Cluster Busting: a compensate for the difficulty of assigning meaning in ISODATA
+
+#### Supervised
+
+-   parametric
+
+    -   Maximum Likelihood: based on the probability
+
+-   non-parametric
+
+    -   Support Vector Machine (SVM): a linear binary classifier
+        -   support vectors: points on the boundary
+
+        -   separating hyperplane: middle margin
+
+        -   maximum margin classifier: maximum margin between two classes
+
+        -   soft margin: allow some misclassifications to occur
+
+        -   underlying theory: structural risk minimization
+
+        -   selectable parameters: type of kernel, C (controls the slope), Gamma(controls the distance of influence of a training point)
+
+## Application
+
+## Reflection

@@ -1,0 +1,66 @@
+---
+title: "GEE"
+editor: visual
+---
+
+## Summary
+
+### What's GEE?
+
+-   it uses Javascript, which is website programming language, variables are defined by *var*
+
+-   it allows massive datasets for quickly planetary scale analysis.
+
+-   in GEE, image refers to raster, feature refers to vector, *ImageCollection* refers to image stack, and *FeatureCollection* refers to feature stack(lots of polygons)
+
+-   code runs on the client side, which is the browser, while the data is stored on the server side(`ee`)
+
+### Why GEE?
+
+-   Scale: The scale is set by the output instead of input.
+
+    -   When doing analysis, GEE would aggregate the image to fit a 256\*256 grid, and they would also select the pyramid with the closest scale and resample using nearest neighbor by default.
+
+-   Projection: This is what we don't need to worry about in GEE. It converts all data into Mercator projection when displaying
+
+### The Usages of GEE
+
+#### Building Blocks
+
+-   objects: vector, raster, feature, string, number
+
+    -   each belongs to a class
+
+    -   each class has specific GEE functions/methods
+
+-   geometry: point/line/(multi)polygon without attributes
+
+-   feature: geometry with attributes
+
+    -   feature collection: multiple features with attributes
+
+#### Typical processes
+
+-   geometry operations: joins, zonal statistics, filtering of images or specific values
+
+-   methods: machine learning, supervised and unsupervised classification, etc.
+
+-   applications/outputs: online charts, scalable geospatial applications with GEE
+
+-   Instances:
+
+    -   Reducing images: reduce the collection to the extreme values for each pixel(`collection.reduce(ee.Reducer())`)
+
+        -   By region: most useful for zonal statistics(`reduceRegion(), image.reduceRegions()`)
+
+        -   By neibourhood: a window of pixels surrounding a central pixel
+
+    -   Linear regression: see the change over time in pixel values(`linearFit()`)
+
+    -   Joins: first put image collections or feature collections in a filter(`ee.Filter`), then join with `join.apply().`
+
+## Application
+
+## Reflection
+
+# 

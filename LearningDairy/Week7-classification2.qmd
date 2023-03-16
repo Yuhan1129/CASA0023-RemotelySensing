@@ -1,0 +1,78 @@
+---
+title: "Classification2"
+editor: visual
+---
+
+## Summary
+
+### Object based image analysis (OBIA)
+
+Considering shapes based on the similarity(homogeneity) or difference(heterogeneity) of the cells(superpixels)
+
+-   Simple Linear Iterative Clustering(SLIC): the most common method for superpixel generation
+
+    -   
+
+### Sub pixel analysis
+
+-   Also termed: Sub pixel classification, Spectral Mixture Analysis(SMA), Linear Spectral unmixing
+
+-   SMA: determines the proportion or abundance of landcover per pixel
+
+    -   Assumption: the reflectance measured at each pixel is represented by the linear sum of endmembers weighted by the associated endmember fraction
+
+-   considerations:
+
+    -   pixel purity
+
+    -   number of endmembers
+
+    -   multiple endmember spectral analysis
+
+### Accuracy assessment
+
+TP (True Positive): models predicts positive class correctly
+
+TN (True Negative): models predicts negative class correctly
+
+FP (False Positive): models predicts positive class incorrectly
+
+FN (False Negative): models predicts negative class incorrectly
+
+-   **PA** (producer's accuracy)=$\frac{TP}{TP+FN}$
+
+-   **UA** (user's accuracy)=$\frac{TP}{TP+FP}$
+
+-   **OA** (the overall accuracy)=$\frac{TP+TN}{TP+FP+FN+TN}$
+
+-   Errors of omission = 100 - PA
+
+-   Errors of commission = 100 - UA
+
+-   kappa coefficient: to express the accuracy of an image compared to the results by chance
+
+-   F1 score: combines both recall(PA) and precision(UA)
+
+    -   F1 = $\frac{TP+TN}{TP+\frac12*(FP+FN)}$,(0,1)
+
+-   Receiver Operating Characteristic Curve (the ROC Curve): to minimize noise from radar to identify true positives and not miss aircraft
+
+    -   Area Under the ROC Curve(AUC/AUROC): simply the area under the curve, could help us compare models easily.
+
+-   Train and Test Split: simply holding back a percentage of the original data used to train the model and then test it at the end.
+
+-   cross validation
+
+    -   leave one out cross validation: an extreme version of cross validation
+
+        -   use all the training data except 1 and repeats though all of it
+
+    -   spatial cross validation
+
+        -   Tobler's first law: the near things are more related than distant things.
+
+        -   spatially partition the folded data, folds are from cross validation
+
+## Application
+
+## Reflection

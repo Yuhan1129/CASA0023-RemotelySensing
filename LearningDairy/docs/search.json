@@ -1,0 +1,240 @@
+[
+  {
+    "objectID": "Week1.html#summary",
+    "href": "Week1.html#summary",
+    "title": "1  Introduction to Remote Sensing",
+    "section": "1.1 Summary",
+    "text": "1.1 Summary\n\n1.1.1 Remote Sensors\nA remote sensor system it the instrument designed to detect and measure physical phenomena or environmental conditions from a distance. Remote sensors could be divided into two types as follow:\n\nPassive sensors systems: receive reflected energy\nActive sensors systems: emit electromagnetic waves, such as SAR\n\n\n\n1.1.2 Electromagnetic waves\nThe electromagnetic waves are used by remote sensors to detect and measure physical phenomena, also the carriers of information.\nThe basic properties of electromagnetic waves include wave length(\\(\\lambda\\)), velocity( \\(c\\), rate of oscillation), frequency(\\(v = 3\\times10^8 m/s\\)). They follow the relationship that \\(\\lambda = c/v\\).\n\n1.1.2.1 Related jargon\nThere are also some jargon about electromagnetic waves we need to know:\n\nElectromagnetic radiation(EMR): waves of an electromagnetic field, travel through space and carry radiant\nradiant energy: energy carried by EMR waves\nradiant flux: energy per unit of time\nshortwave radiation: energy from the sun\nsolar irradiacne: energy or solar power from the sun per unit area per unit time\nexitance/emmittance: energy leaving a surface per unit per unit time\n\n\n\n1.1.2.2 Interactions with Earth\nWhen the electromagnetic waves travel to reach the ground stations or remote sensors, they would be affected by Earth’s atmosphere or surface.Thus, it’s important to know how would the Earth’s surface or atmosphere would change the radiant energy.\n\n1.1.2.2.1 Interactions with Earth’s atmosphere\nSome of the particles or molecules in the air would absorb part of electromagnetic waves, while others would change the direction of electromagnetic waves, and this phenomenon is called atmospheric scattering.\nThere are three types of atmospheric scattering:\n\nRayleigh scattering:\nIt happens when particles are very small compared to the wavelength.\nSmaller wavelengths scatter easier, like blue light would scatter more than red light and yellow light. That’s why we would the sky is blue in the daytime, and the sun is yellow and red when sunset as the sun’s angle changes and the light should travel through more Earth’s atmosphere so that more blue light is scattered out.\nMie scattering:\nIt happens when the particles’ diameters are equal to the wavelength.\nNon selective scattering:\nIt happens when the particles are much larger than the wavelength. For example, the clouds would scatter the visible light of the solar radiation. And that’s the reason why we could see the clouds are white in remote sensing images.\n\n\n\n1.1.2.2.2 Interactions with Earth’s surface\nAfter the solar radiation reached the Earth surface, it would either be absorbed, transmitted or reflected. As for remote sensing, the reflected electromagnetic waves could tell use the characteristics of the Earth’s surface.\nSeveral types of surface interactions: Bidirectional Reflectance Distribution Function (BRDF), Polarization, Fluorensence\n\n\n\n\n1.1.3 Remote Sensing Data\n\n1.1.3.1 Data formats\nMostly remote sensing data is stored in raster, and the file formats usually include GeoTiff and HDF, etc.\n\n\n1.1.3.2 Four resolutions\nRemote sensing data are based on four resolutions\n\nSpatial Resolution: The size of the raster cells.\nSpectral Resolution: The number of bands it records data in.\nThere are several concepts related to spectral resolution:\n\nspectral signatures:\nWe take values for each wavelength across the electromagnetic spectrum to create a spectral signature. Every feature on earth have a unique spectral signature\natmospheric window:\nThe observable wavelengths ranges that are not absorbed by the atmosphere and are transmitted through the atmosphere. Water vapour, ozone, carbon dioxide and atmospheric molecules blocks 100% of the gamma rays, x-rays, and most ultra-violet light.\n\n\n\n\n\n\nRadiometric Resolution: The ability of a sensor to identify and shows small differences.\nTemporal Resolution: The revisit time of the sensor."
+  },
+  {
+    "objectID": "Week1.html#application",
+    "href": "Week1.html#application",
+    "title": "1  Introduction to Remote Sensing",
+    "section": "1.3 Application",
+    "text": "1.3 Application\nWe have already known that each object on the Earth has their own spectral signature, and it is also real that the same object in different status would have different spectral signatures, like healthy tree would show different colors compared to pest-infested trees. In this way, one important application of spectral indicators is forest monitoring.\nGupta and Pandey (2021) developed a systematic approach using Sentinel-2A spectral images to measure the forest health. The workflow could be seen as below.\n\nIn terms of data collection and preprocessing, Gupta and Pandey (2021) collected Sentinel 2A data in May and October 2019, and resampled the data into 30m, then performed atmospheric correction. At the same time, they convert the digital numbers of top-of-atmosphere reflectance into bottom-of-atmosphere, which is the true surface reflectance.\nThen, they used reflectance estimation to calculate ARI 1, which shows signs of stressed related to pigments. They applied the Near Infrared(NIR) band to calculating the NDVI so that greenness vegetation are measured. The structure insensitive pigment index were also calculated. These three index were all calculated from spectral bands(see as follows). Canopy chlorophyll content is based on the inversion of PROSAIL.\n\nFinally, all the four index combined together to calculate the comprehensive Forest Health index. As we can see the figure below, different colors show various health conditions of the forest. The reddest area shows that the forests of this area are in poorest health, while the greenest area’s forests are the healthiest."
+  },
+  {
+    "objectID": "Week1.html#reflection",
+    "href": "Week1.html#reflection",
+    "title": "1  Introduction to Remote Sensing",
+    "section": "1.4 Reflection",
+    "text": "1.4 Reflection\n1.\n2.\n\n\n\n\nGupta, Saurabh Kumar, and Arvind Chandra Pandey. 2021. “Spectral Aspects for Monitoring Forest Health in Extreme Season Using Multispectral Imagery.” The Egyptian Journal of Remote Sensing and Space Science 24 (3, Part 2): 579–86. https://doi.org/10.1016/j.ejrs.2021.07.001."
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "Week4-policy.html",
+    "href": "Week4-policy.html",
+    "title": "4  Policy",
+    "section": "",
+    "text": "5 Summary\nThe combination of spectral bands\nMany cities have published policies for city sustainable development, however,\n\n\n6 Application\n\n\n7 Reflection"
+  },
+  {
+    "objectID": "Week3-corrections.html#summary",
+    "href": "Week3-corrections.html#summary",
+    "title": "3  Corrections",
+    "section": "3.1 Summary",
+    "text": "3.1 Summary\n\n3.1.1 Correction\n\n3.1.1.1 Geometric Correction\nCauses: view angle(off-nadir, off directly down), topography, wind, rotation of the earth\nSolution:\n\nSteps:\n\n\nFind Ground Control Points(GCP) to match known points in the incorrect image and a reference correct dataset.\nThen use a transformation algorithm to model the actual coordinates, like linear regression with distorted x or y as the dependent or independent.\nLater, plot these and minimize the RMSE, whereas the lower RMSE the better model fits.\nLast, resample the final raster because the value of pixels in raster might shift slightly, and the common resample data including Nearest Neighbor, Linear, Cubic and Cubic Spline.\n\n\nTwo Methods:\n\nForward Mapping: Input to output\nThere would be points in the incorrect map falling outside the boundary of the correct map.\nBackward Mapping: Output to input\nThis method completely avoids problems with gaps and overlaps.\n\n\n3.1.1.2 Atmospheric Correction\nCauses: atmospheric scattering and topographic attenuation\nTips: There are both necessary and unnecessary atmospheric corrections. We only need to do the necessary atmospheric corrections.\nSolutions:\n\nTypes:\n\n\nRelative correction: Avoid the evaluation of atmospheric components of any kind(“Living Textbook | Relative Atmospheric Correction | by ITC, University of Twente,” n.d.).\n\nNormalize intensities of different bands within a single image\nNormalize intensities of bands from many dates to one date\nDark object subtraction or histogram adjustment\nPseudo-invariant Features(PIFS)\n\nAbsolute correction:\n\nRequirements: an atmospheric model, local atmospheric visibility and image altitude\nChange digital brightness values into scaled surface reflectance\n\nEmpirical line correction\nSteps:\n\nUsing a filed spectrometer,which require measurements at the same time as the satellite overpass\nThen use this measurements in linear regression against the satellite data raw digital number.\n\n\n\n\n3.1.1.3 Orthorectification Correction\nCauses: a systematic sensor and platform-induced geometry errors, which introduce terrain distortions when the sensor is not pointing directly at the Nadir location of the sensor.\nSolution:\n\nCosine correction\nMinnaert correction\nStatistical Empirical correction\nC Correction (advancing the Cosine)\n\n\n\n3.1.1.4 Radiometric Calibration\nCauses: sensors capture images brightness and distributed as a Digital Number(DN), which allows for efficient storage but has no units.\nSolution:\nDN to spectral radiance\n\n\n\n3.1.2 Data Joining and Enhancement\n\n3.1.2.1 Data Joining\n\nMosaicking:\n\nseamless image: the final image, images feathered together\nseamline: the dividing line between the base image and ‘other’ or second image\nfeathering: give similar brightness values of the two images.\n\n\n\n\n3.1.2.2 Image Enhancement\nContrast enhancement: Images usually do not have good contrast. The methods: min-max, percentage linear and standard deviation, piecewise linear contrast stretch\nOther enhancements:\n\nRatio\nFiltering\n\nLow pass or low frequency (averages the surrounding pixels)\nHigh pass or high frequency - enhance local variations\n\nPCA(Principal Component Analysis): Transform multi-spectral data into uncorrelated and smaller dataset, and reduce future computation\nTexture: Spatial variation of gray values\nfusion: Fusing data from multiple sensors / sources together"
+  },
+  {
+    "objectID": "Week3-corrections.html#application",
+    "href": "Week3-corrections.html#application",
+    "title": "3  Corrections",
+    "section": "3.2 Application",
+    "text": "3.2 Application\nWhen the ARD dataset was still not common to us all, we still needed to do corrections with remote sensing images. Otherwise, there would be significant impacts on our research.\nIn Hadjimitsis et al. (2010)’s work, to evaluate the impacts of atmospheric correction on the agricultural application(detailly, the calculation of vegetation indices), they finished the geometric correction, radiometric correction at Yeroskipou area in Paphos district (the south-west area of Cyprus).\nFirstly, the images were geometrically corrected and geo-referenced to the World Geodetic System’84 (WGS 84/UTM) projection system using a suitable number of identifiable ground control points. Then they used a second order polynomial transformation and kept the RMSE smaller than 1 pixel.\nAs for radiometric correction, as usual, they converted Digital Numbers(DN) to units of radiance by using standard calibration values. Then, the darkest pixel atmospheric correction method (also termed as histogram minimum method) was applied. To calibrate the at-satellite radiance values in each spectral band for the study area, a dark target (e.g. a water dam) was carefully chosen. The average radiance value of the dark target was then subtracted from each at-satellite radiance value in every spectral band.\nFinally, they tested the impact of atmospheric effects on (a) the calculation of vegetation indices; (b) comparison between at-satellite reﬂectance and spectro-radiometric values; and (c) the calculation of real daily evapotranspiration.\nTen Landsat TM/ETM+ images were utilized to assess the impact of atmospheric correction on the accuracy of vegetation indices and evapotranspiration estimates. The results indicate that atmospheric effects must be taken into account for the calculation of DVI, NDVI, SAVI, and MSAVI indices."
+  },
+  {
+    "objectID": "Week3-corrections.html#reflection",
+    "href": "Week3-corrections.html#reflection",
+    "title": "3  Corrections",
+    "section": "3.3 Reflection",
+    "text": "3.3 Reflection\n\n\n\n\nHadjimitsis, D. G., G. Papadavid, A. Agapiou, K. Themistocleous, M. G. Hadjimitsis, A. Retalis, S. Michaelides, N. Chrysoulakis, L. Toulios, and C. R. I. Clayton. 2010. “Atmospheric Correction for Satellite Remotely Sensed Data Intended for Agricultural Applications: Impact on Vegetation Indices.” Natural Hazards and Earth System Sciences 10 (1): 89–95. https://doi.org/10.5194/nhess-10-89-2010.\n\n\n“Living Textbook | Relative Atmospheric Correction | by ITC, University of Twente.” n.d. https://ltb.itc.utwente.nl/498/concept/81688."
+  },
+  {
+    "objectID": "Week2-portfolio.html",
+    "href": "Week2-portfolio.html",
+    "title": "2  Portfolio",
+    "section": "",
+    "text": "see as:\nhttps://yuhan1129.github.io/Remotely-Sensing/presentation/OLI.html"
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "6  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Gupta, Saurabh Kumar, and Arvind Chandra Pandey. 2021. “Spectral\nAspects for Monitoring Forest Health in Extreme Season Using\nMultispectral Imagery.” The Egyptian Journal of Remote\nSensing and Space Science 24 (3, Part 2): 579–86. https://doi.org/10.1016/j.ejrs.2021.07.001.\n\n\nHadjimitsis, D. G., G. Papadavid, A. Agapiou, K. Themistocleous, M. G.\nHadjimitsis, A. Retalis, S. Michaelides, N. Chrysoulakis, L. Toulios,\nand C. R. I. Clayton. 2010. “Atmospheric Correction for Satellite\nRemotely Sensed Data Intended for Agricultural Applications: Impact on\nVegetation Indices.” Natural Hazards and Earth System\nSciences 10 (1): 89–95. https://doi.org/10.5194/nhess-10-89-2010.\n\n\n“Living Textbook | Relative Atmospheric Correction | by ITC,\nUniversity of Twente.” n.d. https://ltb.itc.utwente.nl/498/concept/81688."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "CASA0023-LearningDairy",
+    "section": "",
+    "text": "Preface\nLearning Diary for remote sensing"
+  },
+  {
+    "objectID": "Week5-GEE.html",
+    "href": "Week5-GEE.html",
+    "title": "5  GEE",
+    "section": "",
+    "text": "6"
+  },
+  {
+    "objectID": "Week5-GEE.html#summary",
+    "href": "Week5-GEE.html#summary",
+    "title": "5  GEE",
+    "section": "5.1 Summary",
+    "text": "5.1 Summary\n\n5.1.1 What’s GEE?\n\nit uses Javascript, which is website programming language, variables are defined by var\nit allows massive datasets for quickly planetary scale analysis.\nin GEE, image refers to raster, feature refers to vector, ImageCollection refers to image stack, and FeatureCollection refers to feature stack(lots of polygons)\ncode runs on the client side, which is the browser, while the data is stored on the server side(ee)\n\n\n\n5.1.2 Why GEE?\n\nScale: The scale is set by the output instead of input.\n\nWhen doing analysis, GEE would aggregate the image to fit a 256*256 grid, and they would also select the pyramid with the closest scale and resample using nearest neighbor by default.\n\nProjection: This is what we don’t need to worry about in GEE. It converts all data into Mercator projection when displaying\n\n\n\n5.1.3 The Usages of GEE\n\n5.1.3.1 Building Blocks\n\nobjects: vector, raster, feature, string, number\n\neach belongs to a class\neach class has specific GEE functions/methods\n\ngeometry: point/line/(multi)polygon without attributes\nfeature: geometry with attributes\n\nfeature collection: multiple features with attributes\n\n\n\n\n5.1.3.2 Typical processes\n\ngeometry operations: joins, zonal statistics, filtering of images or specific values\nmethods: machine learning, supervised and unsupervised classification, etc.\napplications/outputs: online charts, scalable geospatial applications with GEE\nInstances:\n\nReducing images: reduce the collection to the extreme values for each pixel(collection.reduce(ee.Reducer()))\n\nBy region: most useful for zonal statistics(reduceRegion(), image.reduceRegions())\nBy neibourhood: a window of pixels surrounding a central pixel\n\nLinear regression: see the change over time in pixel values(linearFit())\nJoins: first put image collections or feature collections in a filter(ee.Filter), then join with join.apply()."
+  },
+  {
+    "objectID": "Week5-GEE.html#application",
+    "href": "Week5-GEE.html#application",
+    "title": "5  GEE",
+    "section": "5.2 Application",
+    "text": "5.2 Application"
+  },
+  {
+    "objectID": "Week5-GEE.html#reflection",
+    "href": "Week5-GEE.html#reflection",
+    "title": "5  GEE",
+    "section": "5.3 Reflection",
+    "text": "5.3 Reflection"
+  },
+  {
+    "objectID": "Week4-policy.html#summary",
+    "href": "Week4-policy.html#summary",
+    "title": "4  Policy",
+    "section": "4.1 Summary",
+    "text": "4.1 Summary\n\n4.1.1"
+  },
+  {
+    "objectID": "Week4-policy.html#application",
+    "href": "Week4-policy.html#application",
+    "title": "4  Policy",
+    "section": "4.2 Application",
+    "text": "4.2 Application\nrefer to how the remotely sensed data you sourced could be used to assist with contributing to the policy goal. How could the data be applied to solve the policy challenge."
+  },
+  {
+    "objectID": "Week4-policy.html#reflection",
+    "href": "Week4-policy.html#reflection",
+    "title": "4  Policy",
+    "section": "4.3 Reflection",
+    "text": "4.3 Reflection\nrefer to what you have learnt in relation to the policy, city and the application of the data."
+  },
+  {
+    "objectID": "Week1.html#summary-for-lecture",
+    "href": "Week1.html#summary-for-lecture",
+    "title": "1  Introduction to Remote Sensing",
+    "section": "2.1 Summary for Lecture",
+    "text": "2.1 Summary for Lecture\n\n2.1.1 Remote Sensors\nA remote sensor system it the instrument designed to detect and measure physical phenomena or environmental conditions from a distance. Remote sensors could be divided into two types as follow:\n\nPassive sensors systems: receive reflected energy\nActive sensors systems: emit electromagnetic waves, such as SAR\n\n\n\n2.1.2 Electromagnetic waves\nThe electromagnetic waves are used by remote sensors to detect and measure physical phenomena, also the carriers of information.\nThe basic properties of electromagnetic waves include wave length(\\(\\lambda\\)), velocity( \\(c\\), rate of oscillation), frequency(\\(v = 3\\times10^8 m/s\\)). They follow the relationship that \\(\\lambda = c/v\\).\n\n2.1.2.1 Related jargon\nThere are also some jargon about electromagnetic waves we need to know:\n\nElectromagnetic radiation(EMR): waves of an electromagnetic field, travel through space and carry radiant\nradiant energy: energy carried by EMR waves\nradiant flux: energy per unit of time\nshortwave radiation: energy from the sun\nsolar irradiacne: energy or solar power from the sun per unit area per unit time\nexitance/emmittance: energy leaving a surface per unit per unit time\n\n\n\n2.1.2.2 Interactions with Earth\nWhen the electromagnetic waves travel to reach the ground stations or remote sensors, they would be affected by Earth’s atmosphere or surface.Thus, it’s important to know how would the Earth’s surface or atmosphere would change the radiant energy.\n\n2.1.2.2.1 Interactions with Earth’s atmosphere\nSome of the particles or molecules in the air would absorb part of electromagnetic waves, while others would change the direction of electromagnetic waves, and this phenomenon is called atmospheric scattering.\nThere are three types of atmospheric scattering:\n\nRayleigh scattering:\nIt happens when particles are very small compared to the wavelength.\nSmaller wavelengths scatter easier, like blue light would scatter more than red light and yellow light. That’s why we would the sky is blue in the daytime, and the sun is yellow and red when sunset as the sun’s angle changes and the light should travel through more Earth’s atmosphere so that more blue light is scattered out.\nMie scattering:\nIt happens when the particles’ diameters are equal to the wavelength.\nNon selective scattering:\nIt happens when the particles are much larger than the wavelength. For example, the clouds would scatter the visible light of the solar radiation. And that’s the reason why we could see the clouds are white in remote sensing images.\n\n\n\n2.1.2.2.2 Interactions with Earth’s surface\nAfter the solar radiation reached the Earth surface, it would either be absorbed, transmitted or reflected. As for remote sensing, the reflected electromagnetic waves could tell use the characteristics of the Earth’s surface.\nSeveral types of surface interactions: Bidirectional Reflectance Distribution Function (BRDF), Polarization, Fluorensence\n\n\n\n\n2.1.3 Remote Sensing Data\n\n2.1.3.1 Data formats\nMostly remote sensing data is stored in raster, and the file formats usually include GeoTiff and HDF, etc.\n\n\n2.1.3.2 Four resolutions\nRemote sensing data are based on four resolutions\n\nSpatial Resolution: The size of the raster cells.\nSpectral Resolution: The number of bands it records data in.\nThere are several concepts related to spectral resolution:\n\nspectral signatures:\nWe take values for each wavelength across the electromagnetic spectrum to create a spectral signature. Every feature on earth have a unique spectral signature\natmospheric window:\nThe observable wavelengths ranges that are not absorbed by the atmosphere and are transmitted through the atmosphere. Water vapour, ozone, carbon dioxide and atmospheric molecules blocks 100% of the gamma rays, x-rays, and most ultra-violet light.\n\n\n\n\n\n\nRadiometric Resolution: The ability of a sensor to identify and shows small differences.\nTemporal Resolution: The revisit time of the sensor."
+  },
+  {
+    "objectID": "Week3-corrections.html#summary-for-lecture",
+    "href": "Week3-corrections.html#summary-for-lecture",
+    "title": "3  Corrections",
+    "section": "3.2 Summary for Lecture",
+    "text": "3.2 Summary for Lecture\n\n3.2.1 Correction\n\n3.2.1.1 Geometric Correction\nCauses: view angle(off-nadir, off directly down), topography, wind, rotation of the earth\nSolutions:\n\nSteps:\n\n\nFind Ground Control Points(GCP) to match known points in the incorrect image and a reference correct dataset.\nThen use a transformation algorithm to model the actual coordinates, like linear regression with distorted x or y as the dependent or independent.\nLater, plot these and minimize the RMSE, whereas the lower RMSE the better model fits.\nLast, resample the final raster because the value of pixels in raster might shift slightly, and the common resample data including Nearest Neighbor, Linear, Cubic and Cubic Spline.\n\n\nTwo Methods:\n\nForward Mapping: Input to output\nThere would be points in the incorrect map falling outside the boundary of the correct map.\nBackward Mapping: Output to input\nThis method completely avoids problems with gaps and overlaps.\n\n\n3.2.1.2 Atmospheric Correction\nCauses: atmospheric scattering and topographic attenuation\nTips: There are both necessary and unnecessary atmospheric corrections. We only need to do the necessary atmospheric corrections.\nSolutions:\n\nTypes:\n\n\nRelative correction: Avoid the evaluation of atmospheric components of any kind(“Living Textbook | Relative Atmospheric Correction | by ITC, University of Twente,” n.d.).\n\nNormalize intensities of different bands within a single image\nNormalize intensities of bands from many dates to one date\nDark object subtraction or histogram adjustment\nPseudo-invariant Features(PIFS)\n\nAbsolute correction:\n\nRequirements: an atmospheric model, local atmospheric visibility and image altitude\nChange digital brightness values into scaled surface reflectance\n\nEmpirical line correction\nSteps:\n\nUsing a filed spectrometer,which require measurements at the same time as the satellite overpass\nThen use this measurements in linear regression against the satellite data raw digital number.\n\n\n\n\n3.2.1.3 Orthorectification Correction\nCauses: a systematic sensor and platform-induced geometry errors, which introduce terrain distortions when the sensor is not pointing directly at the Nadir location of the sensor.\nSolution:\n\nCosine correction\nMinnaert correction\nStatistical Empirical correction\nC Correction (advancing the Cosine)\n\n\n\n3.2.1.4 Radiometric Calibration\nCauses: sensors capture images brightness and distributed as a Digital Number(DN), which allows for efficient storage but has no units.\nSolution:\nDN to spectral radiance\n\n\n\n3.2.2 Data Joining and Enhancement\nData Joining\nMosaicking\n\n3.2.2.1 Image Enhancement\ncontrast enhancement\nratio\nfiltering\npca\ntexture\nfusion"
+  },
+  {
+    "objectID": "Week3-corrections.html#summary-for-practical",
+    "href": "Week3-corrections.html#summary-for-practical",
+    "title": "3  Corrections",
+    "section": "3.3 Summary for Practical",
+    "text": "3.3 Summary for Practical"
+  },
+  {
+    "objectID": "Week1.html",
+    "href": "Week1.html",
+    "title": "1  Introduction to Remote Sensing",
+    "section": "",
+    "text": "2 Application\nWe have already known that each object on the Earth has their own spectral signature, and it is also real that the same object in different status would have different spectral signatures, like healthy tree would show different colors compared to pest-infested trees. In this way, one important application of spectral indicators is forest monitoring.\nGupta and Pandey (2021) developed a systematic approach using Sentinel-2A spectral images to measure the forest health. The workflow could be seen as below.\nIn terms of data collection and preprocessing, Gupta and Pandey (2021) collected Sentinel 2A data in May and October 2019, and resampled the data into 30m, then performed atmospheric correction. At the same time, they convert the digital numbers of top-of-atmosphere reflectance into bottom-of-atmosphere, which is the true surface reflectance.\nThen, they used reflectance estimation to calculate ARI 1, which shows signs of stressed related to pigments. They applied the Near Infrared(NIR) band to calculating the NDVI so that greenness vegetation are measured. The structure insensitive pigment index were also calculated. These three index were all calculated from spectral bands(see as follows). Canopy chlorophyll content is based on the inversion of PROSAIL.\nFinally, all the four index combined together to calculate the comprehensive Forest Health index. As we can see the figure below, different colors show various health conditions of the forest. The reddest area shows that the forests of this area are in poorest health, while the greenest area’s forests are the healthiest."
+  },
+  {
+    "objectID": "Week1.html#summary-for-practical",
+    "href": "Week1.html#summary-for-practical",
+    "title": "1  Introduction to Remote Sensing",
+    "section": "2.2 Summary for Practical",
+    "text": "2.2 Summary for Practical\nData Source:\nSentinel: could be processed either in QGIS or SNAP.\nLandsat:\nRS & R:\npackages: terra, stars, raster"
+  },
+  {
+    "objectID": "Week1.html#questions",
+    "href": "Week1.html#questions",
+    "title": "1  Introduction to Remote Sensing",
+    "section": "2.3 Questions",
+    "text": "2.3 Questions"
+  },
+  {
+    "objectID": "Week6-classification1.html#summary",
+    "href": "Week6-classification1.html#summary",
+    "title": "6  Classification1",
+    "section": "6.1 Summary",
+    "text": "6.1 Summary\n\n6.1.1 Classification and Regression Trees (CART)\n\nclassification trees: classifying data into two or more discrete categories\n\nimpure: the mixture of categories among the final leaves\nGini impurity: measure the impurity of a group containing different classes\n\nthe one with the lowest impurity goes at the top of the tree\nuse it at each branch to split the nodes further\n\n\nregression trees: predict continuous dependent variable\n\nresiduals: to decide where the breaks in the data\nsum of the squared residuals(SSR): the one with the lowest SSR is the root of the tree to start with.\n\noverfitting: One leaf with only one pixel value or one person, shows high variance, and does not generalize the model well.\n\nunderfitting: high bias, oversimplifies the model\nsolutions for overfitting:\n\nlimit how trees grow by removing the leaves in each tree\nweakest line pruning with tree score\n\nalpha: gives the lowest SSR form testing data is the final value\n\n\n\n\n6.1.2 Random Forests\n\ngrow many classification decision trees, which comprises the forest\n\ntwo techniques:\n\nbootstrapping(bagging): resampling with replacement. 70% of the training data is used in the bootstrap, 30% is left out of the bag(OOB).\n\nOOB error: proportion of OOB incorrectly classified\n\nrandom feature slection\n\n\n\n\n\n6.1.3 Image Classification\nTurn every pixel in the image into one of a pre-defined categorical classification\n\n6.1.3.1 Unsupervised\n\nDBSCAN: radius and min points\nISODATA: same as k-means but clusters with few pixels are meaningless, close clusters could be merged and could be split for elongated clusters\nCluster Busting: a compensate for the difficulty of assigning meaning in ISODATA\n\n\n\n6.1.3.2 Supervised\n\nparametric\n\nMaximum Likelihood: based on the probability\n\nnon-parametric\n\nSupport Vector Machine (SVM): a linear binary classifier\n\nsupport vectors: points on the boundary\nseparating hyperplane: middle margin\nmaximum margin classifier: maximum margin between two classes\nsoft margin: allow some misclassifications to occur\nunderlying theory: structural risk minimization\nselectable parameters: type of kernel, C (controls the slope), Gamma(controls the distance of influence of a training point)"
+  },
+  {
+    "objectID": "Week6-classification1.html#application",
+    "href": "Week6-classification1.html#application",
+    "title": "6  Classification1",
+    "section": "6.2 Application",
+    "text": "6.2 Application"
+  },
+  {
+    "objectID": "Week6-classification1.html#reflection",
+    "href": "Week6-classification1.html#reflection",
+    "title": "6  Classification1",
+    "section": "6.3 Reflection",
+    "text": "6.3 Reflection"
+  },
+  {
+    "objectID": "Week7-classification2.html#summary",
+    "href": "Week7-classification2.html#summary",
+    "title": "7  Classification2",
+    "section": "7.1 Summary",
+    "text": "7.1 Summary\n\n7.1.1 Object based image analysis (OBIA)\nConsidering shapes based on the similarity(homogeneity) or difference(heterogeneity) of the cells(superpixels)\n\nSimple Linear Iterative Clustering(SLIC): the most common method for superpixel generation\n\n\n\n\n\n\n7.1.2 Sub pixel analysis\n\nAlso termed: Sub pixel classification, Spectral Mixture Analysis(SMA), Linear Spectral unmixing\nSMA: determines the proportion or abundance of landcover per pixel\n\nAssumption: the reflectance measured at each pixel is represented by the linear sum of endmembers weighted by the associated endmember fraction\n\nconsiderations:\n\npixel purity\nnumber of endmembers\nmultiple endmember spectral analysis\n\n\n\n\n7.1.3 Accuracy assessment\nTP (True Positive): models predicts positive class correctly\nTN (True Negative): models predicts negative class correctly\nFP (False Positive): models predicts positive class incorrectly\nFN (False Negative): models predicts negative class incorrectly\n\nPA (producer’s accuracy)=\\(\\frac{TP}{TP+FN}\\)\nUA (user’s accuracy)=\\(\\frac{TP}{TP+FP}\\)\nOA (the overall accuracy)=\\(\\frac{TP+TN}{TP+FP+FN+TN}\\)\nErrors of omission = 100 - PA\nErrors of commission = 100 - UA\nkappa coefficient: to express the accuracy of an image compared to the results by chance\nF1 score: combines both recall(PA) and precision(UA)\n\nF1 = \\(\\frac{TP+TN}{TP+\\frac12*(FP+FN)}\\),(0,1)\n\nReceiver Operating Characteristic Curve (the ROC Curve): to minimize noise from radar to identify true positives and not miss aircraft\n\nArea Under the ROC Curve(AUC/AUROC): simply the area under the curve, could help us compare models easily.\n\nTrain and Test Split: simply holding back a percentage of the original data used to train the model and then test it at the end.\ncross validation\n\nleave one out cross validation: an extreme version of cross validation\n\nuse all the training data except 1 and repeats though all of it\n\nspatial cross validation\n\nTobler’s first law: the near things are more related than distant things.\nspatially partition the folded data, folds are from cross validation"
+  },
+  {
+    "objectID": "Week7-classification2.html#reflection",
+    "href": "Week7-classification2.html#reflection",
+    "title": "7  Classification2",
+    "section": "7.3 Reflection",
+    "text": "7.3 Reflection"
+  },
+  {
+    "objectID": "Week7-classification2.html#application",
+    "href": "Week7-classification2.html#application",
+    "title": "7  Classification2",
+    "section": "7.2 Application",
+    "text": "7.2 Application"
+  },
+  {
+    "objectID": "Week8-temperature.html#summary",
+    "href": "Week8-temperature.html#summary",
+    "title": "8  Temperature",
+    "section": "8.1 Summary",
+    "text": "8.1 Summary\n\n8.1.1 Urban Heat Island\n\n8.1.1.1 Factors\n\nTwo main factors\n\nmore dark surfaces that retain heat\nless vegetation that cools environment\n\nOther factors\n\nlow Sky View Factor(SVF)\nair speed, cloud cover, cyclic solar radiation, building material type\nsocial factors\nenvironmental \neconomic(local and gdp)\n\n\n\n\n\n8.1.2 Global policy\n\nNew urban agenda\nSustainable Development Goals\nBeat the heat handbook \n\nSuperblock\n\nBackground\nSuperillies-15min city\nFuture: wide scale\n\nGreen corridors\nSydney western hubs\nReflections\n\nUseful project idea but not given specifics\n\n\n\n\n\n8.1.3 Metropolitan UHI reduction activities\n\nvoluntary\npolicy\n\nMetropolitan strategies \nLocal city mandate\nExapmles: Fremantles’s urban forest plan\n\nPlanning requirements:\n\nPerth\nSingapore: location is ignored just say you have to have it"
+  },
+  {
+    "objectID": "Week8-temperature.html#application",
+    "href": "Week8-temperature.html#application",
+    "title": "8  Temperature",
+    "section": "8.2 Application",
+    "text": "8.2 Application"
+  },
+  {
+    "objectID": "Week8-temperature.html#reflection",
+    "href": "Week8-temperature.html#reflection",
+    "title": "8  Temperature",
+    "section": "8.3 Reflection",
+    "text": "8.3 Reflection\nThe application of 15-minutes-walking circles not only environment friendly, but aslo increase economy in some sense"
+  }
+]

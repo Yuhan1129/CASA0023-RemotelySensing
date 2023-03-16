@@ -1,0 +1,16 @@
+---
+title: "Policy"
+editor: visual
+---
+
+## Summary
+
+### 
+
+## Application
+
+refer to how the remotely sensed data you sourced could be used to assist with contributing to the policy goal. How could the data be applied to solve the policy challenge.
+
+## Reflection
+
+refer to what you have learnt in relation to the policy, city and the application of the data.

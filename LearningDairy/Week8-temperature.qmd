@@ -1,0 +1,76 @@
+---
+title: "Temperature"
+editor: visual
+---
+
+## Summary
+
+### Urban Heat Island
+
+#### Factors
+
+-   Two main factors
+
+    -   more dark surfaces that retain heat
+
+    -   less vegetation that cools environment
+
+-   Other factors
+
+    -   low Sky View Factor(SVF)
+
+    -   air speed, cloud cover, cyclic solar radiation, building material type
+
+    -   social factors
+
+    -   environmental 
+
+    -   economic(local and gdp)
+
+### Global policy
+
+-   New urban agenda
+
+-   Sustainable Development Goals
+
+-   Beat the heat handbook 
+
+    -   Superblock
+
+        -   Background
+
+        -   Superillies-15min city
+
+        -   Future: wide scale
+
+    -   Green corridors
+
+    -   Sydney western hubs
+
+    -   Reflections
+
+        -   Useful project idea but not given specifics
+
+### Metropolitan UHI reduction activities
+
+-   voluntary
+
+-   policy
+
+    -   Metropolitan strategies 
+
+    -   Local city mandate
+
+    -   Exapmles: Fremantles's urban forest plan
+
+-   Planning requirements:
+
+    -   Perth
+
+    -   Singapore: location is ignored just say you have to have it
+
+## Application
+
+## Reflection
+
+The application of 15-minutes-walking circles not only environment friendly, but aslo increase economy in some sense
