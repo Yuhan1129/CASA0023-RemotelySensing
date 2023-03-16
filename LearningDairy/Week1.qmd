@@ -95,9 +95,9 @@ Remote sensing data are based on four resolutions
 
 -   Temporal Resolution: The revisit time of the sensor.
 
-# Application
+## Application
 
-We have already known that each object on the Earth has their own spectral signature, and it is also real that the same object in different status would have different spectral signatures, like healthy tree would show different colors compared to pest-infested trees. In this way, one important application of spectral indicators is forest monitoring.
+We have already known that each object on the Earth has their own spectral signature, and it is also real that the same object in different status would have different spectral signatures, like healthy tree would show different colors compared to pest-infested trees. Meanwhile, forest are facing multiple threats and stressors, including deforestation, climate changes, invasive speicies and etc.[@lausch2016; @lewis2015] In this way, one important application of spectral indicators is forest monitoring.
 
 @gupta2021 developed a systematic approach using Sentinel-2A spectral images to measure the forest health. The workflow could be seen as below.
 
@@ -105,14 +105,16 @@ We have already known that each object on the Earth has their own spectral signa
 
 In terms of data collection and preprocessing, @gupta2021 collected Sentinel 2A data in May and October 2019, and resampled the data into 30m, then performed atmospheric correction. At the same time, they convert the digital numbers of top-of-atmosphere reflectance into bottom-of-atmosphere, which is the true surface reflectance.
 
-Then, they used reflectance estimation to calculate ARI 1, which shows signs of stressed related to pigments. They applied the Near Infrared(NIR) band to calculating the NDVI so that greenness vegetation are measured. The structure insensitive pigment index were also calculated. These three index were all calculated from spectral bands(see as follows). Canopy chlorophyll content is based on the inversion of PROSAIL.
+Then, they used reflectance estimation to calculate ARI 1, which shows signs of stressed related to pigments. They applied the Near Infrared(NIR) band to calculating the NDVI so that greenness vegetation are measured. The structure insensitive pigment index were also calculated. These three index were all calculated from spectral bands(see as Figure 3 below). Canopy chlorophyll content is based on the inversion of PROSAIL.
 
 ![](img/Week1-forest-index-1.png)
 
-Finally, all the four index combined together to calculate the comprehensive Forest Health index. As we can see the figure below, different colors show various health conditions of the forest. The reddest area shows that the forests of this area are in poorest health, while the greenest area's forests are the healthiest.
+Finally, all the four index combined together to calculate the comprehensive Forest Health index. As we can see the figure below, different colors show various health conditions of the forest. The reddest area shows that the forests of this area are in poorest health, while the greenest area's forests are the healthiest. And we could conclude that the forest in October is healthier than forest in May. And the authors interpolate that the temperature and precipitation are strong drivers of tree growth and mortality.
 
 ![](img/Week1-forest-index-2.png)
 
-# Reflection
+## Reflection
 
--   
+-   The remote sensing has a wide variety of applications, ranging from the particle matters in the atmosphere to the mineral detection beneath the earth surfaces. It has revolutionized our ability to study and monitor our planet, as it allows us to collect data on a scale and level of detail that was previously impossible. Just by receiving or transmitting electromagnetic waves, the remote sensors could decipher so much information so that we could observe the earth from a distance.
+
+-   In the practical, we have used QGIS, SNAP and R for processing different satellite images. To be honest, if not required for using SNAP for a try, I would never open this software anymore. It is cumbersome to use and its GUI is quite old-fashion. Whereas, they all take a long time to process images. Just looking forward to seeing how powerful and fast GEE is.
