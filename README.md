@@ -1,4 +1,4 @@
-# Remotely-Sensing
-Learning Dairy for RS referes to https://yuhan1129.github.io/Remotely-Sensing/LearningDairy/docs/index.html
+# CASA0023-Remotely Sensing
+Learning Dairy for RS referes to https://yuhan1129.github.io/CASA0023-RemotelySensing/LearningDairy/docs/
 
-presentation made with xaringan refers to https://yuhan1129.github.io/Remotely-Sensing/presentation/OLI.html
+presentation made with xaringan refers to https://yuhan1129.github.io/CASA0023-RemotelySensing/presentation/OLI.html
