@@ -144,3 +144,5 @@ Even the availability of ARD improve efficieny for research, some processing is 
 ![](img/week3-ARD.png){fig-align="center" width="586"}
 
 ## Reflection
+
+-   
