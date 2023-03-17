@@ -123,9 +123,9 @@ DN to spectral radiance
 
 As the influx of earth observation data enable use to closely monitor the environmental status at various scales[@pekel2016], the usage complexity and volume of data would be easily overwhelming[@frantz2019]. Therefore, the earth observation data are in urgent to be pre-processed for immediate analysis, which is
 
-Analysis Ready Data
+*Analysis Ready Data*
 
-:   mostly used to describe radiometrically and geometrically consistent data that include cloud and other poor-quality observation flags for filtering data prior to analysis[@dwyer2018]
+:   *mostly used to describe radiometrically and geometrically consistent data that include cloud and other poor-quality observation flags for filtering data prior to analysis[@dwyer2018]*
 
 However, when the ARD dataset was still not common to us all, we still needed to do corrections with remote sensing images. Otherwise, there would be significant impacts on our research. And below are **the applications and operations of corrections in research**.
 

@@ -5,7 +5,7 @@ project:
 book:
   title: "CASA0023-LearningDairy"
   author: "Yuhan Liao"
-  date: "1/25/2023"
+  date: "3/23/2023"
   chapters:
     - index.qmd
     - Week1.qmd
