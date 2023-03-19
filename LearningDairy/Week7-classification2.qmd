@@ -11,7 +11,7 @@ Considering shapes based on the similarity(homogeneity) or difference(heterogene
 
 -   Simple Linear Iterative Clustering(SLIC): the most common method for superpixel generation
 
-    -   
+-   R packages: Supercells, SegOptim
 
 ### Sub pixel analysis
 
