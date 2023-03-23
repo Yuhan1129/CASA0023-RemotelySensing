@@ -65,7 +65,7 @@ In addition to a large repository of raw remotely sensed imagery, the GEE data c
 
 ![](img/week5-GEE.png)
 
-They investigated 349 papers used GEE in a wide variety of remote sensing applications, and categorized them into 11 different groups(shown in Figure below). Different values in the gear show the number of papers in related areas. It has shown that most studies are on crop mapping, including vegetation, rice paddy, and agricultural monitoring. This is followed by studies on water, land cover/land use, and disaster. The least number of studies are on data processing.
+They reviewed 349 papers used GEE in a wide variety of remote sensing applications, and categorized them into 11 different groups(shown in Figure below). Different values in the gear show the number of papers in related areas. It has shown that most studies are on crop mapping, including vegetation, rice paddy, and agricultural monitoring. This is followed by studies on water, land cover/land use, and disaster. The least number of studies are on data processing.
 
 ![](img/week5-GEE-2.png)
 
@@ -75,6 +75,10 @@ It is interesting to note that they also categorized all studies into two groups
 
 In machine learning, classification, clustering, regression and dimension deduction are four main algorithms[@holloway2018]. While in the papers @tamiminia2020a investigated, they find that in GEE application classification and regression are the most popular machine learning algorithms in remote sensing. In detail, DT, CART, KNN, non-linear SVM, RF, and ANN are the most often-use non-parametric classification algorithms. In the category of others, time-series analysis, feature extraction, image composite-visual interpretation and image processing were applied to satellite images.
 
+Even GEE is powerful for geospatial and big data analysis, it has several limitations. Firstly, despite it has an extensive archive of satellite images, it has limited historical and high-resolution data. Notably, it could be challenging to implement new algorithms. For instance, Deep Learning has becoming extensively used in image classification. However, DL algorithms are not yet supported directly by GEE. The open-source framework like Tensorflow has been an important way of using DL in GEE.
+
 ## Reflection
+
+-   As shown in practical, GEE though powerful in computation, it becomes quite complex and verbose when doing some simple task like masking in R or QGIS. It seems that GEE is better suited for image analysis compared to vector-based processing.
 
 -   
