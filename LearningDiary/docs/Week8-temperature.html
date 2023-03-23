@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.313">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>CASA0023-LearningDairy - 8&nbsp; Temperature</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./references.html" rel="next">
+<link href="./Week7-classification2.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Temperature</span></h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">CASA0023-LearningDairy</a> 
+    </div>
+      </div>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Preface</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Week1.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to Remote Sensing</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Week2-portfolio.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Portfolio</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Week3-corrections.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Corrections</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Week4-policy.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Policy</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Week5-GEE.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">GEE</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Week6-classification1.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Classification1</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Week7-classification2.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classification2</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Week8-temperature.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Temperature</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="toc-section-number">8.1</span>  Summary</a>
+  <ul class="collapse">
+  <li><a href="#urban-heat-island" id="toc-urban-heat-island" class="nav-link" data-scroll-target="#urban-heat-island"><span class="toc-section-number">8.1.1</span>  Urban Heat Island</a></li>
+  <li><a href="#global-policy" id="toc-global-policy" class="nav-link" data-scroll-target="#global-policy"><span class="toc-section-number">8.1.2</span>  Global policy</a></li>
+  <li><a href="#metropolitan-uhi-reduction-activities" id="toc-metropolitan-uhi-reduction-activities" class="nav-link" data-scroll-target="#metropolitan-uhi-reduction-activities"><span class="toc-section-number">8.1.3</span>  Metropolitan UHI reduction activities</a></li>
+  </ul></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="toc-section-number">8.2</span>  Application</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="toc-section-number">8.3</span>  Reflection</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Temperature</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="summary" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">8.1</span> Summary</h2>
+<section id="urban-heat-island" class="level3" data-number="8.1.1">
+<h3 data-number="8.1.1" class="anchored" data-anchor-id="urban-heat-island"><span class="header-section-number">8.1.1</span> Urban Heat Island</h3>
+<section id="factors" class="level4" data-number="8.1.1.1">
+<h4 data-number="8.1.1.1" class="anchored" data-anchor-id="factors"><span class="header-section-number">8.1.1.1</span> Factors</h4>
+<ul>
+<li><p>Two main factors</p>
+<ul>
+<li><p>more dark surfaces that retain heat</p></li>
+<li><p>less vegetation&nbsp;that cools environment</p></li>
+</ul></li>
+<li><p>Other factors</p>
+<ul>
+<li><p>low Sky View Factor(SVF)</p></li>
+<li><p>air speed, cloud cover, cyclic solar radiation, building material type</p></li>
+<li><p>social factors</p></li>
+<li><p>environmental&nbsp;</p></li>
+<li><p>economic(local and gdp)</p></li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="global-policy" class="level3" data-number="8.1.2">
+<h3 data-number="8.1.2" class="anchored" data-anchor-id="global-policy"><span class="header-section-number">8.1.2</span> Global policy</h3>
+<ul>
+<li><p>New urban agenda</p></li>
+<li><p>Sustainable Development Goals</p></li>
+<li><p>Beat the heat handbook&nbsp;</p>
+<ul>
+<li><p>Superblock</p>
+<ul>
+<li><p>Background</p></li>
+<li><p>Superillies-15min city</p></li>
+<li><p>Future: wide scale</p></li>
+</ul></li>
+<li><p>Green corridors</p></li>
+<li><p>Sydney western hubs</p></li>
+<li><p>Reflections</p>
+<ul>
+<li>Useful project ideas but not given specifics</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="metropolitan-uhi-reduction-activities" class="level3" data-number="8.1.3">
+<h3 data-number="8.1.3" class="anchored" data-anchor-id="metropolitan-uhi-reduction-activities"><span class="header-section-number">8.1.3</span> Metropolitan UHI reduction activities</h3>
+<ul>
+<li><p>voluntary</p></li>
+<li><p>policy</p>
+<ul>
+<li><p>Metropolitan strategies&nbsp;</p></li>
+<li><p>Local city mandate</p></li>
+<li><p>Exapmles: Fremantles’s urban forest plan</p></li>
+</ul></li>
+<li><p>Planning requirements:</p>
+<ul>
+<li><p>Perth</p></li>
+<li><p>Singapore: location is ignored just say you have to have it</p></li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="application" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="application"><span class="header-section-number">8.2</span> Application</h2>
+<p>In my perspective, the construction of a superblock in Barcelona appears to bring more benefits than harm. By restricting the use of cars within the superblock, there is a decrease in harmful emissions, which can improve air quality<span class="citation" data-cites="nieuwenhuijsen2016">(<a href="references.html#ref-nieuwenhuijsen2016" role="doc-biblioref">Nieuwenhuijsen and Khreis 2016</a>)</span>. Additionally, the inclusion of more green spaces can help reduce the urban heat island effect while also enhancing the visual appeal of the community. The design of the superblock encourages individuals to cross the streets on foot, promoting increased physical activity. This pedestrian-friendly environment can also boost local businesses, as people are more likely to stop and explore street-side shops.</p>
+<p>Besides, I am interested in learning how to evaluate whether a city block has the potential to become a superblock.</p>
+<p>In the article proposed by <span class="citation" data-cites="eggimann2022">Eggimann (<a href="references.html#ref-eggimann2022" role="doc-biblioref">2022</a>)</span>, they firstly identified possible superblock locations, whose geometric properties resemble Barcelona’s superblocks. Then they collected street information, building information and land use for the assessment of potential superblock implementation in different levels (see as Figure 1).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/week8.png" class="img-fluid figure-img" width="500"></p>
+<p></p><figcaption class="figure-caption">Figure 1. Graphical overview of the methodological workflow</figcaption><p></p>
+</figure>
+</div>
+<p>As we are concerning remote sensing application, so I would ignore the details of street and building information. They need the current state of the urban green space to derive potential opportunities for converting grey (or non-green) space. They therefore used a canopy height model developed by <span class="citation" data-cites="christianginzler2021">Christian Ginzler (<a href="references.html#ref-christianginzler2021" role="doc-biblioref">2021</a>)</span> to identify everything classified asurban green with a height above 5 cm.</p>
+<blockquote class="blockquote">
+<p>The canopy height model, also known as the Vegetation Height Model, has been developed specifically for Switzerland. To create this model, stereo images provided by the Swiss authorities were utilized to generate a digital surface model (DSM). The DSM was subsequently normalized using a Digital Terrain Model (DTM) that was based on laser data with buildings masked out. This allowed for the accurate calculation of vegetation heights.</p>
+</blockquote>
+<p>This study for assessing the potential of blocks being converted to superblocks has the transferability to apply to other cities using corresponding datasets. However, it’s important to note that this study only considered the opportunities of converting urban green spaces. In the future, more comprehensive evaluations that consider the interplay between public transportation, and walkability will be necessary.</p>
+</section>
+<section id="reflection" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">8.3</span> Reflection</h2>
+<ul>
+<li>Transferability could be applied to any other cities</li>
+</ul>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
+<div id="ref-christianginzler2021" class="csl-entry" role="doc-biblioentry">
+Christian Ginzler. 2021. <span>“Vegetation Height Model NFI.”</span> <a href="https://doi.org/10.16904/1000001.1">https://doi.org/10.16904/1000001.1</a>.
+</div>
+<div id="ref-eggimann2022" class="csl-entry" role="doc-biblioentry">
+Eggimann, Sven. 2022. <span>“Expanding Urban Green Space with Superblocks.”</span> <em>Land Use Policy</em> 117 (June): 106111. <a href="https://doi.org/10.1016/j.landusepol.2022.106111">https://doi.org/10.1016/j.landusepol.2022.106111</a>.
+</div>
+<div id="ref-nieuwenhuijsen2016" class="csl-entry" role="doc-biblioentry">
+Nieuwenhuijsen, Mark J., and Haneen Khreis. 2016. <span>“Car Free Cities: Pathway to Healthy Urban Living.”</span> <em>Environment International</em> 94 (September): 251–62. <a href="https://doi.org/10.1016/j.envint.2016.05.032">https://doi.org/10.1016/j.envint.2016.05.032</a>.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./Week7-classification2.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classification2</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./references.html" class="pagination-link">
+        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>

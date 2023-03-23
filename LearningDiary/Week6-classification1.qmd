@@ -1,0 +1,118 @@
+---
+title: "Classification1"
+editor: visual
+---
+
+## Summary
+
+### Classification and Regression Trees (CART)
+
+-   **classification trees**: classifying data into two or more discrete categories
+
+    -   impure: the mixture of categories among the final leaves
+
+    -   Gini impurity: measure the impurity of a group containing different classes
+
+        -   the one with the lowest impurity goes at the top of the tree
+
+        -   use it at each branch to split the nodes further
+
+-   **regression trees**: predict continuous dependent variable
+
+    -   residuals: to decide where the breaks in the data
+
+    -   sum of the squared residuals(SSR): the one with the lowest SSR is the root of the tree to start with.
+
+-   **overfitting:** One leaf with only one pixel value or one person, shows high variance, and does not generalize the model well.
+
+    -   underfitting: high bias, oversimplifies the model
+
+    -   solutions for overfitting:
+
+        -   limit how trees grow by removing the leaves in each tree
+
+        -   weakest line pruning with tree score
+
+    -   alpha: gives the lowest SSR form testing data is the final value
+
+### Random Forests
+
+-   grow many classification decision trees, which comprises the forest
+
+    -   two techniques:
+
+        -   bootstrapping(bagging): resampling with replacement. 70% of the training data is used in the bootstrap, 30% is left out of the bag(OOB).
+
+            -   OOB error: proportion of OOB incorrectly classified
+
+        -   random feature slection
+
+### Image Classification
+
+Turn every pixel in the image into one of a pre-defined categorical classification
+
+#### Unsupervised
+
+-   DBSCAN: radius and min points
+
+-   ISODATA: same as k-means but clusters with few pixels are meaningless, close clusters could be merged and could be split for elongated clusters
+
+-   Cluster Busting: a compensate for the difficulty of assigning meaning in ISODATA
+
+#### Supervised
+
+-   parametric
+
+    -   Maximum Likelihood: based on the probability
+
+-   non-parametric
+
+    -   Support Vector Machine (SVM): a linear binary classifier
+        -   support vectors: points on the boundary
+
+        -   separating hyperplane: middle margin
+
+        -   maximum margin classifier: maximum margin between two classes
+
+        -   soft margin: allow some misclassifications to occur
+
+        -   underlying theory: structural risk minimization
+
+        -   selectable parameters: type of kernel, C (controls the slope), Gamma(controls the distance of influence of a training point)
+
+## Application
+
+### Selection of Classifier
+
+-   **Experiment More**
+
+We have actually learned a lot about classification methods, and have a basic understanding of their theories. However, in practical it's hard to choose which methods to use when there are so many algorithms available. And there has been few literature generalized a optimum classifier, because the optimum algorithm is usually case-specified depending on the classes mapped, the nature of the training data, and the predictor variables[@maxwell2018]. **We should experiment with multiple algorithms to determine which is the optimal for the specific classification task**[@lawrence2015].
+
+-   **Not just considering Overall Accuracy**
+
+It is also emphasized that the overall accuracy is not just the only thing to consider about, particularly when we are focusing on mapping rare classes. Rare classes would have little impact on the overall accuracy, but would be important in determining the usefulness of classification[@maxwell2018].
+
+### What affects the performance of the classification methods?
+
+-   **Number of training samples and quality of sample data**
+
+@huang2002 found that the training sample size would have a greater effect on the performance of classification methods especially when using Maximum Likelihood, Decision Tree(DT) and SVM. They further concluded that the size of training sample mainly depend on the algorithm, the number of input variables and the size and spatial variability of mapped area. In broader conclusion by @li2014, no matter what algorithm would be used, the large and accurate training datasets are more preferable.
+
+In terms of data quality, it is not easy to collect a repository of high quality training data due limited time and access. We should select a method that are less sensitive to data quality like mislabeled data samples.
+
+-   **The balance of classes**
+
+The performance of algorithms would be also affected by the class imbalance. In random sampling, the probability of selecting a class is proportional to the class area, and therefore relatively rare classes will likely comprise a smaller proportion of the training set[@maxwell2018]. In this case, producer's accuracy and user's accuracy would become key measures. And they concluded that there are several solutions to balance training data.
+
+1.  use an equalized stratified random sampling design
+2.  randomly undersample the majority class, or reduce the overall number of samples used in the training.
+3.  produce synthetic examples of the minority class that are similar to the original minority examples in the feature space.
+4.  implement a cost-sensitive method
+
+-   **Predefined Parameters**
+
+Predefined parameters are also an important impact factor on the performance of classification methods. The default values are usually suggested, but empirical testing to determine the optimum values is still needed to ensure the best performance. Notably, there has been research that avoid using predefined parameters that reduce the influence of user-set parameters[@suel2019].
+
+## Reflection
+
+-   

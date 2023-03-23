@@ -1,0 +1,48 @@
+---
+title: "Week7-Classification2"
+editor: visual
+---
+
+## Summary 
+
+### Object based image analysis (OBIA)
+
+### Sub pixel analysis
+
+### Accuracy assessment
+
+PA producer accuracy
+
+UA user's accuracy
+
+OA the overall accuracy
+
+TP true positive
+
+TN true negative
+
+FP False positive
+
+FN false negative
+
+Errors of omission
+
+Errors of commission
+
+kappa coefficient
+
+F1 score
+
+Receiver Operating Characteristic Curve (the ROC Curve)
+
+Train and test split
+
+cross validation
+
+leave one out cross validation
+
+spatial cross validation
+
+### Application
+
+## Reflection

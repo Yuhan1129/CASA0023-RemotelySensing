@@ -1,0 +1,40 @@
+---
+title: "Week6-Classification1"
+editor: visual
+---
+
+## Summary 
+
+### Classification and Regression Tress (CART)
+
+composition
+
+classification trees
+
+regression trees
+
+overfitting:
+
+high variance, while high bias is underfitting
+
+solutions: limit how trees grow, weakest link pruning
+
+### Random Forests
+
+#### Image Classification
+
+unsupervised
+
+DBSCAN
+
+ISODATA
+
+supervised
+
+#### Maximum Likelihood
+
+#### Support Vector Machine (SVM)
+
+## Application
+
+## Reflection

@@ -1,0 +1,22 @@
+---
+title: "Policy"
+editor: visual
+---
+
+## Summary
+
+### Heritage Conservation in London
+
+#### Local Policy
+
+> **The London Plan**
+
+## Application
+
+refer to how the remotely sensed data you sourced could be used to assist with contributing to the policy goal. How could the data be applied to solve the policy challenge.
+
+## Reflection
+
+-   Through the class and case study, I have learned that remotely **sensed data can be a powerful tool for *identifying areas where heat mitigation strategies can be most effective*.** The combination of satellite and aerial imagery, coupled with machine learning techniques, can provide policymakers with valuable insights into the most effective strategies to **mitigate UHI effects.**
+
+-   

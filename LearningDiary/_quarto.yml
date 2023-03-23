@@ -1,0 +1,31 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "CASA0023-LearningDiary"
+  author: "Yuhan Liao"
+  date: "3/23/2023"
+  chapters:
+    - index.qmd
+    - Week1.qmd
+    - Week2-portfolio.qmd
+    - Week3-corrections.qmd
+    - Week4-policy.qmd
+    - Week5-GEE.qmd
+    - Week6-classification1.qmd
+    - Week7-classification2.qmd
+    - Week8-temperature.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: 
+      - cosmo
+  pdf:
+    documentclass: scrreprt
+
+editor: visual
+
