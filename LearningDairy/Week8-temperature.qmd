@@ -73,4 +73,4 @@ editor: visual
 
 ## Reflection
 
-The application of 15-minutes-walking circles not only environment friendly, but aslo increase economy in some sense
+-   

@@ -309,23 +309,22 @@ div.csl-indent {
 </section>
 <section id="application" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="application"><span class="header-section-number">3.2</span> Application</h2>
-<p>As the influx of earth observation data enable use to closely monitor the environmental status at various scales<span class="citation" data-cites="pekel2016">(<a href="references.html#ref-pekel2016" role="doc-biblioref">Pekel et al. 2016</a>)</span>, the usage complexity and volume of data would be easily overwhelming<span class="citation" data-cites="frantz2019">(<a href="references.html#ref-frantz2019" role="doc-biblioref">Frantz 2019</a>)</span>. Therefore, the earth observation data are in urgent to be pre-processed for immediate analysis, which is</p>
-<dl>
-<dt><em>Analysis Ready Data</em></dt>
-<dd>
+<p>As the influx of earth observation data enable us to closely monitor the environmental status at various scales<span class="citation" data-cites="pekel2016">(<a href="references.html#ref-pekel2016" role="doc-biblioref">Pekel et al. 2016</a>)</span>, the usage complexity and volume of data would be easily overwhelming<span class="citation" data-cites="frantz2019">(<a href="references.html#ref-frantz2019" role="doc-biblioref">Frantz 2019</a>)</span>. Therefore, the earth observation data are in urgent to be pre-processed for immediate analysis, which is</p>
+<blockquote class="blockquote">
+<p><strong><em>Analysis Ready Data</em></strong></p>
 <p><em>mostly used to describe radiometrically and geometrically consistent data that include cloud and other poor-quality observation flags for filtering data prior to analysis<span class="citation" data-cites="dwyer2018">(<a href="references.html#ref-dwyer2018" role="doc-biblioref">Dwyer et al. 2018</a>)</span></em></p>
-</dd>
-</dl>
+</blockquote>
 <p>However, when the ARD dataset was still not common to us all, we still needed to do corrections with remote sensing images. Otherwise, there would be significant impacts on our research. And below are <strong>the applications and operations of corrections in research</strong>.</p>
 <p>In <span class="citation" data-cites="hadjimitsis2010">Hadjimitsis et al. (<a href="references.html#ref-hadjimitsis2010" role="doc-biblioref">2010</a>)</span>’s work, to evaluate the impacts of atmospheric correction on the agricultural application(detailly, the calculation of vegetation indices), they finished the geometric correction, radiometric correction at Yeroskipou area in Paphos district (the south-west area of Cyprus).</p>
 <p>Firstly, the images were geometrically corrected and geo-referenced to the World Geodetic System’84 (WGS 84/UTM) projection system using a suitable number of identifiable ground control points. Then they used a second order polynomial transformation and kept the RMSE smaller than 1 pixel.</p>
 <p>As for radiometric correction, as usual, they converted Digital Numbers(DN) to units of radiance by using standard calibration values. Then, the darkest pixel atmospheric correction method (also termed as histogram minimum method) was applied. To calibrate the at-satellite radiance values in each spectral band for the study area, a dark target (e.g.&nbsp;a water dam) was carefully chosen. The average radiance value of the dark target was then subtracted from each at-satellite radiance value in every spectral band.</p>
 <p>Finally, they tested the impact of atmospheric effects on (a) the calculation of vegetation indices; (b) comparison between at-satellite reﬂectance and spectro-radiometric values; and (c) the calculation of real daily evapotranspiration.</p>
 <p>Ten Landsat TM/ETM+ images were utilized to assess the impact of atmospheric correction on the accuracy of vegetation indices and evapotranspiration estimates. The results indicate that atmospheric effects must be taken into account for the calculation of DVI, NDVI, SAVI, and MSAVI indices.</p>
-<p>Even the availability of ARD improve efficieny for research, some processing is still necessary. It is stated that the variability in data availability across space and time, along with partial incompleteness caused by clouds, acquisition orbits, and observation scenarios, necessitates the use of specialized algorithms or an additional round of processing. This is required to generate spatial completeness and temporal equidistance, ensuring that the data is ready for analysis<span class="citation" data-cites="frantz2019">(<a href="references.html#ref-frantz2019" role="doc-biblioref">Frantz 2019</a>)</span>. Therefore, it is cruicial to have highly analysis ready data(<strong>hARD</strong>) and <strong>hARD+</strong>, see as figure below</p>
+<p>Even the availability of ARD improve the efficiency for research, some processing is still necessary. It is stated that the variability in data availability across space and time, along with partial incompleteness caused by clouds, acquisition orbits, and observation scenarios, necessitates the use of specialized algorithms or an additional round of processing. This is required to generate spatial completeness and temporal equidistance, ensuring that the data is ready for analysis<span class="citation" data-cites="frantz2019">(<a href="references.html#ref-frantz2019" role="doc-biblioref">Frantz 2019</a>)</span>. Therefore, it is cruicial to have highly analysis ready data(<strong>hARD</strong>) and <strong>hARD+</strong>, see as figure below.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="img/week3-ARD.png" class="img-fluid figure-img" width="586"></p>
+<p></p><figcaption class="figure-caption">Figure1. Framework for Operational Radiometric Correct for Environmental Monitoring</figcaption><p></p>
 </figure>
 </div>
 </section>

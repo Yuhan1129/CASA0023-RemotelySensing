@@ -20,6 +20,25 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
@@ -163,7 +182,11 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#random-forests" id="toc-random-forests" class="nav-link" data-scroll-target="#random-forests"><span class="toc-section-number">6.1.2</span>  Random Forests</a></li>
   <li><a href="#image-classification" id="toc-image-classification" class="nav-link" data-scroll-target="#image-classification"><span class="toc-section-number">6.1.3</span>  Image Classification</a></li>
   </ul></li>
-  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="toc-section-number">6.2</span>  Application</a></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="toc-section-number">6.2</span>  Application</a>
+  <ul class="collapse">
+  <li><a href="#selection-of-classifier" id="toc-selection-of-classifier" class="nav-link" data-scroll-target="#selection-of-classifier"><span class="toc-section-number">6.2.1</span>  Selection of Classifier</a></li>
+  <li><a href="#what-affects-the-performance-of-the-classification-methods" id="toc-what-affects-the-performance-of-the-classification-methods" class="nav-link" data-scroll-target="#what-affects-the-performance-of-the-classification-methods"><span class="toc-section-number">6.2.2</span>  What affects the performance of the classification methods?</a></li>
+  </ul></li>
   <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="toc-section-number">6.3</span>  Reflection</a></li>
   </ul>
 </nav>
@@ -271,11 +294,64 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="application" class="level2" data-number="6.2">
 <h2 data-number="6.2" class="anchored" data-anchor-id="application"><span class="header-section-number">6.2</span> Application</h2>
+<section id="selection-of-classifier" class="level3" data-number="6.2.1">
+<h3 data-number="6.2.1" class="anchored" data-anchor-id="selection-of-classifier"><span class="header-section-number">6.2.1</span> Selection of Classifier</h3>
+<ul>
+<li><strong>Experiment More</strong></li>
+</ul>
+<p>We have actually learned a lot about classification methods, and have a basic understanding of their theories. However, in practical it’s hard to choose which methods to use when there are so many algorithms available. And there has been few literature generalized a optimum classifier, because the optimum algorithm is usually case-specified depending on the classes mapped, the nature of the training data, and the predictor variables<span class="citation" data-cites="maxwell2018">(<a href="references.html#ref-maxwell2018" role="doc-biblioref">Maxwell, Warner, and Fang 2018</a>)</span>. <strong>We should experiment with multiple algorithms to determine which is the optimal for the specific classification task</strong><span class="citation" data-cites="lawrence2015">(<a href="references.html#ref-lawrence2015" role="doc-biblioref">Lawrence and Moran 2015</a>)</span>.</p>
+<ul>
+<li><strong>Not just considering Overall Accuracy</strong></li>
+</ul>
+<p>It is also emphasized that the overall accuracy is not just the only thing to consider about, particularly when we are focusing on mapping rare classes. Rare classes would have little impact on the overall accuracy, but would be important in determining the usefulness of classification<span class="citation" data-cites="maxwell2018">(<a href="references.html#ref-maxwell2018" role="doc-biblioref">Maxwell, Warner, and Fang 2018</a>)</span>.</p>
+</section>
+<section id="what-affects-the-performance-of-the-classification-methods" class="level3" data-number="6.2.2">
+<h3 data-number="6.2.2" class="anchored" data-anchor-id="what-affects-the-performance-of-the-classification-methods"><span class="header-section-number">6.2.2</span> What affects the performance of the classification methods?</h3>
+<ul>
+<li><strong>Number of training samples and quality of sample data</strong></li>
+</ul>
+<p><span class="citation" data-cites="huang2002">Huang, Davis, and Townshend (<a href="references.html#ref-huang2002" role="doc-biblioref">2002</a>)</span> found that the training sample size would have a greater effect on the performance of classification methods especially when using Maximum Likelihood, Decision Tree(DT) and SVM. They further concluded that the size of training sample mainly depend on the algorithm, the number of input variables and the size and spatial variability of mapped area. In broader conclusion by <span class="citation" data-cites="li2014">Li et al. (<a href="references.html#ref-li2014" role="doc-biblioref">2014</a>)</span>, no matter what algorithm would be used, the large and accurate training datasets are more preferable.</p>
+<p>In terms of data quality, it is not easy to collect a repository of high quality training data due limited time and access. We should select a method that are less sensitive to data quality like mislabeled data samples.</p>
+<ul>
+<li><strong>The balance of classes</strong></li>
+</ul>
+<p>The performance of algorithms would be also affected by the class imbalance. In random sampling, the probability of selecting a class is proportional to the class area, and therefore relatively rare classes will likely comprise a smaller proportion of the training set<span class="citation" data-cites="maxwell2018">(<a href="references.html#ref-maxwell2018" role="doc-biblioref">Maxwell, Warner, and Fang 2018</a>)</span>. In this case, producer’s accuracy and user’s accuracy would become key measures. And they concluded that there are several solutions to balance training data.</p>
+<ol type="1">
+<li>use an equalized stratified random sampling design</li>
+<li>randomly undersample the majority class, or reduce the overall number of samples used in the training.</li>
+<li>produce synthetic examples of the minority class that are similar to the original minority examples in the feature space.</li>
+<li>implement a cost-sensitive method</li>
+</ol>
+<ul>
+<li><strong>Predefined Parameters</strong></li>
+</ul>
+<p>Predefined parameters are also an important impact factor of the performance of classification methods. The default values are usually suggested, but empirical testing to determine the optimum values is still needed to ensure the best performance. Notably, there has been research that avoid using predefined parameters that reduce the influence of user-set parameters<span class="citation" data-cites="suel2019">(<a href="references.html#ref-suel2019" role="doc-biblioref">Suel et al. 2019</a>)</span>.</p>
+</section>
 </section>
 <section id="reflection" class="level2" data-number="6.3">
 <h2 data-number="6.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">6.3</span> Reflection</h2>
+<ul>
+<li></li>
+</ul>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
+<div id="ref-huang2002" class="csl-entry" role="doc-biblioentry">
+Huang, C., L. S. Davis, and J. R. G. Townshend. 2002. <span>“An Assessment of Support Vector Machines for Land Cover Classification.”</span> <em>International Journal of Remote Sensing</em> 23 (4): 725–49. <a href="https://doi.org/10.1080/01431160110040323">https://doi.org/10.1080/01431160110040323</a>.
+</div>
+<div id="ref-lawrence2015" class="csl-entry" role="doc-biblioentry">
+Lawrence, Rick L., and Christopher J. Moran. 2015. <span>“The AmericaView Classification Methods Accuracy Comparison Project: A Rigorous Approach for Model Selection.”</span> <em>Remote Sensing of Environment</em> 170 (December): 115–20. <a href="https://doi.org/10.1016/j.rse.2015.09.008">https://doi.org/10.1016/j.rse.2015.09.008</a>.
+</div>
+<div id="ref-li2014" class="csl-entry" role="doc-biblioentry">
+Li, Congcong, Jie Wang, Lei Wang, Luanyun Hu, and Peng Gong. 2014. <span>“Comparison of Classification Algorithms and Training Sample Sizes in Urban Land Classification with Landsat Thematic Mapper Imagery.”</span> <em>Remote Sensing</em> 6 (2): 964–83. <a href="https://doi.org/10.3390/rs6020964">https://doi.org/10.3390/rs6020964</a>.
+</div>
+<div id="ref-maxwell2018" class="csl-entry" role="doc-biblioentry">
+Maxwell, Aaron E., Timothy A. Warner, and Fang Fang. 2018. <span>“Implementation of Machine-Learning Classification in Remote Sensing: An Applied Review.”</span> <em>International Journal of Remote Sensing</em> 39 (9): 2784–2817. <a href="https://doi.org/10.1080/01431161.2018.1433343">https://doi.org/10.1080/01431161.2018.1433343</a>.
+</div>
+<div id="ref-suel2019" class="csl-entry" role="doc-biblioentry">
+Suel, Esra, John W. Polak, James E. Bennett, and Majid Ezzati. 2019. <span>“Measuring Social, Environmental and Health Inequalities Using Deep Learning and Street Imagery.”</span> <em>Scientific Reports</em> 9 (1): 6229. <a href="https://doi.org/10.1038/s41598-019-42036-w">https://doi.org/10.1038/s41598-019-42036-w</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->

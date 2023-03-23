@@ -212,9 +212,9 @@ div.csl-indent {
 <section id="whats-gee" class="level3" data-number="5.1.1">
 <h3 data-number="5.1.1" class="anchored" data-anchor-id="whats-gee"><span class="header-section-number">5.1.1</span> What’s GEE?</h3>
 <ul>
-<li><p>it uses Javascript, which is website programming language, variables are defined by <em>var</em></p></li>
+<li><p>it uses Javascript, which is website programming language, variables are defined by <code>var</code></p></li>
 <li><p>it allows massive datasets for quickly planetary scale analysis.</p></li>
-<li><p>in GEE, image refers to raster, feature refers to vector, <em>ImageCollection</em> refers to image stack, and <em>FeatureCollection</em> refers to feature stack(lots of polygons)</p></li>
+<li><p>in GEE, image refers to raster, feature refers to vector, <code>ImageCollection</code> refers to image stack, and <code>FeatureCollection</code> refers to feature stack(lots of polygons)</p></li>
 <li><p>code runs on the client side, which is the browser, while the data is stored on the server side(<code>ee</code>)</p></li>
 </ul>
 </section>
@@ -267,19 +267,23 @@ div.csl-indent {
 </section>
 <section id="application" class="level2" data-number="5.2">
 <h2 data-number="5.2" class="anchored" data-anchor-id="application"><span class="header-section-number">5.2</span> Application</h2>
-<p>In addition to a large repository of raw remotely sensed imagery, the GEE data catalog also offers preprocessed, mosaic images that have been processed to remove clouds. Table 1, as listed by <span class="citation" data-cites="tamiminia2020">Tamiminia et al. (<a href="references.html#ref-tamiminia2020" role="doc-biblioref">2020a</a>)</span>, provides a comprehensive overview of the capabilities of packages in the GEE platform, I think, which would be enlightening for us to explore. <img src="img/week5-GEE.png" class="img-fluid"></p>
-<p>They investigated 349 papers used GEE in a wide variety of remote sensing applications, and categorized them into 11 different groups(shown in Figure below). Different values in the gear show the number of papers in related areas. It has shown that most studies are on crop mapping, including vegetation, rice paddy, and agricultural monitoring. The least number of studies are on data processing.</p>
+<p>In addition to a large repository of raw remotely sensed imagery, the GEE data catalog also offers preprocessed, mosaic images that have been processed to remove clouds. Table 1, as listed by <span class="citation" data-cites="tamiminia2020">Tamiminia et al. (<a href="references.html#ref-tamiminia2020" role="doc-biblioref">2020a</a>)</span>, provides a more comprehensive overview of the capabilities of packages in the GEE platform, I think, which would be enlightening for us to explore. Still, I believe that the most effective way of learning these things would be open the browser and look for the GEE APIs. And try to write your own code with interesting datasets.</p>
+<p><img src="img/week5-GEE.png" class="img-fluid"></p>
+<p>They investigated 349 papers used GEE in a wide variety of remote sensing applications, and categorized them into 11 different groups(shown in Figure below). Different values in the gear show the number of papers in related areas. It has shown that most studies are on crop mapping, including vegetation, rice paddy, and agricultural monitoring. This is followed by studies on water, land cover/land use, and disaster. The least number of studies are on data processing.</p>
 <p><img src="img/week5-GEE-2.png" class="img-fluid"></p>
-<p>It is interesting to note that they also categorized all studies into two groups based on the type of data used: remote sensing data and ready-to-use products(such as NDVI and land cover). These two main categories were further subdivided into smaller categories(shown in Figure below) based on the methods.</p>
+<p>It is interesting to note that they also categorized all studies into two groups based on the type of data used: remote sensing data and ready-to-use products(such as NDVI and land cover). These two main categories were further subdivided into smaller categories(shown in Figure below) based on the methods. The most used methods are machine learning, while a small part of research focus on time-series analysis, feature extraction, image composite-visual interpretation and image pre-processing.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="img/week5-GEE-3.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
-<p>In machine learning, classification, clustering, regression and dimension deduction are four main algorithms<span class="citation" data-cites="holloway2018">(<a href="references.html#ref-holloway2018" role="doc-biblioref">Holloway and Mengersen 2018</a>)</span>. While in the papers <span class="citation" data-cites="tamiminia2020a">Tamiminia et al. (<a href="references.html#ref-tamiminia2020a" role="doc-biblioref">2020b</a>)</span> investigated, they find that classification and regression are the most popular machine learning algorithms in remote sensing. In detail, DT, CART, KNN, non-linear SVM, RF, and ANN are the most often-use non-parametric classification algorithms. In the category of others, time-series analysis, feature extraction, image composite-visual interpretation and image processing were applied to satellite images.</p>
+<p>In machine learning, classification, clustering, regression and dimension deduction are four main algorithms<span class="citation" data-cites="holloway2018">(<a href="references.html#ref-holloway2018" role="doc-biblioref">Holloway and Mengersen 2018</a>)</span>. While in the papers <span class="citation" data-cites="tamiminia2020a">Tamiminia et al. (<a href="references.html#ref-tamiminia2020a" role="doc-biblioref">2020b</a>)</span> investigated, they find that in GEE application classification and regression are the most popular machine learning algorithms in remote sensing. In detail, DT, CART, KNN, non-linear SVM, RF, and ANN are the most often-use non-parametric classification algorithms. In the category of others, time-series analysis, feature extraction, image composite-visual interpretation and image processing were applied to satellite images.</p>
 </section>
 <section id="reflection" class="level2" data-number="5.3">
 <h2 data-number="5.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">5.3</span> Reflection</h2>
+<ul>
+<li></li>
+</ul>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">

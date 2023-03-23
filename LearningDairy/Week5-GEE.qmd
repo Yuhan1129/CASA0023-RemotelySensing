@@ -7,11 +7,11 @@ editor: visual
 
 ### What's GEE?
 
--   it uses Javascript, which is website programming language, variables are defined by *var*
+-   it uses Javascript, which is website programming language, variables are defined by `var`
 
 -   it allows massive datasets for quickly planetary scale analysis.
 
--   in GEE, image refers to raster, feature refers to vector, *ImageCollection* refers to image stack, and *FeatureCollection* refers to feature stack(lots of polygons)
+-   in GEE, image refers to raster, feature refers to vector, `ImageCollection` refers to image stack, and `FeatureCollection` refers to feature stack(lots of polygons)
 
 -   code runs on the client side, which is the browser, while the data is stored on the server side(`ee`)
 
@@ -61,16 +61,20 @@ editor: visual
 
 ## Application
 
-In addition to a large repository of raw remotely sensed imagery, the GEE data catalog also offers preprocessed, mosaic images that have been processed to remove clouds. Table 1, as listed by @tamiminia2020, provides a comprehensive overview of the capabilities of packages in the GEE platform, I think, which would be enlightening for us to explore. ![](img/week5-GEE.png)
+In addition to a large repository of raw remotely sensed imagery, the GEE data catalog also offers preprocessed, mosaic images that have been processed to remove clouds. Table 1, as listed by @tamiminia2020, provides a more comprehensive overview of the capabilities of packages in the GEE platform, I think, which would be enlightening for us to explore. Still, I believe that the most effective way of learning these things would be open the browser and look for the GEE APIs. And try to write your own code with interesting datasets.
 
-They investigated 349 papers used GEE in a wide variety of remote sensing applications, and categorized them into 11 different groups(shown in Figure below). Different values in the gear show the number of papers in related areas. It has shown that most studies are on crop mapping, including vegetation, rice paddy, and agricultural monitoring. The least number of studies are on data processing.
+![](img/week5-GEE.png)
+
+They investigated 349 papers used GEE in a wide variety of remote sensing applications, and categorized them into 11 different groups(shown in Figure below). Different values in the gear show the number of papers in related areas. It has shown that most studies are on crop mapping, including vegetation, rice paddy, and agricultural monitoring. This is followed by studies on water, land cover/land use, and disaster. The least number of studies are on data processing.
 
 ![](img/week5-GEE-2.png)
 
-It is interesting to note that they also categorized all studies into two groups based on the type of data used: remote sensing data and ready-to-use products(such as NDVI and land cover). These two main categories were further subdivided into smaller categories(shown in Figure below) based on the methods.
+It is interesting to note that they also categorized all studies into two groups based on the type of data used: remote sensing data and ready-to-use products(such as NDVI and land cover). These two main categories were further subdivided into smaller categories(shown in Figure below) based on the methods. The most used methods are machine learning, while a small part of research focus on time-series analysis, feature extraction, image composite-visual interpretation and image pre-processing.
 
 ![](img/week5-GEE-3.png){fig-align="center"}
 
-In machine learning, classification, clustering, regression and dimension deduction are four main algorithms[@holloway2018]. While in the papers @tamiminia2020a investigated, they find that classification and regression are the most popular machine learning algorithms in remote sensing. In detail, DT, CART, KNN, non-linear SVM, RF, and ANN are the most often-use non-parametric classification algorithms. In the category of others, time-series analysis, feature extraction, image composite-visual interpretation and image processing were applied to satellite images.
+In machine learning, classification, clustering, regression and dimension deduction are four main algorithms[@holloway2018]. While in the papers @tamiminia2020a investigated, they find that in GEE application classification and regression are the most popular machine learning algorithms in remote sensing. In detail, DT, CART, KNN, non-linear SVM, RF, and ANN are the most often-use non-parametric classification algorithms. In the category of others, time-series analysis, feature extraction, image composite-visual interpretation and image processing were applied to satellite images.
 
 ## Reflection
+
+-   

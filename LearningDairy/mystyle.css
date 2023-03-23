@@ -1,0 +1,30 @@
+/* Change the font family */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Adjust the font size */
+h1 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+/* Customize the colors */
+body {
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+a {
+  color: #0077cc;
+}
+
+/* Adjust the margins */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
