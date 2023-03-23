@@ -19,21 +19,21 @@ The electromagnetic waves are used by remote sensors to detect and measure physi
 
 The basic properties of electromagnetic waves include wave length($\lambda$), velocity( $c$, rate of oscillation), frequency($v = 3\times10^8 m/s$). They follow the relationship that $\lambda = c/v$.
 
-#### Related jargon
-
-There are also some jargon about electromagnetic waves we need to know:
-
--   Electromagnetic radiation(EMR): waves of an electromagnetic field, travel through space and carry radiant
-
--   radiant energy: energy carried by EMR waves
-
--   radiant flux: energy per unit of time
-
--   shortwave radiation: energy from the sun
-
--   solar irradiacne: energy or solar power from the sun per unit area per unit time
-
--   exitance/emmittance: energy leaving a surface per unit per unit time
+> **Related jargon**
+>
+> There are also some jargon about electromagnetic waves we need to know:
+>
+> -   Electromagnetic radiation(EMR): waves of an electromagnetic field, travel through space and carry radiant
+>
+> -   radiant energy: energy carried by EMR waves
+>
+> -   radiant flux: energy per unit of time
+>
+> -   shortwave radiation: energy from the sun
+>
+> -   solar irradiacne: energy or solar power from the sun per unit area per unit time
+>
+> -   exitance/emmittance: energy leaving a surface per unit per unit time
 
 #### Interactions with Earth
 
