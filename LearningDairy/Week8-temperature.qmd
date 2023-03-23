@@ -49,7 +49,7 @@ editor: visual
 
     -   Reflections
 
-        -   Useful project idea but not given specifics
+        -   Useful project ideas but not given specifics
 
 ### Metropolitan UHI reduction activities
 
@@ -71,6 +71,20 @@ editor: visual
 
 ## Application
 
+In my perspective, the construction of a superblock in Barcelona appears to bring more benefits than harm. By restricting the use of cars within the superblock, there is a decrease in harmful emissions, which can improve air quality[@nieuwenhuijsen2016]. Additionally, the inclusion of more green spaces can help reduce the urban heat island effect while also enhancing the visual appeal of the community. The design of the superblock encourages individuals to cross the streets on foot, promoting increased physical activity. This pedestrian-friendly environment can also boost local businesses, as people are more likely to stop and explore street-side shops.
+
+Besides, I am interested in learning how to evaluate whether a city block has the potential to become a superblock.
+
+In the article proposed by @eggimann2022, they firstly identified possible superblock locations, whose geometric properties resemble Barcelona's superblocks. Then they collected street information, building information and land use for the assessment of potential superblock implementation in different levels (see as Figure 1).
+
+![Figure 1. Graphical overview of the methodological workflow](img/week8.png){fig-align="center" width="500"}
+
+As we are concerning remote sensing application, so I would ignore the details of street and building information. They need the current state of the urban green space to derive potential opportunities for converting grey (or non-green) space. They therefore used a canopy height model developed by @christianginzler2021 to identify everything classified asurban green with a height above 5 cm.
+
+> The canopy height model, also known as the Vegetation Height Model, has been developed specifically for Switzerland. To create this model, stereo images provided by the Swiss authorities were utilized to generate a digital surface model (DSM). The DSM was subsequently normalized using a Digital Terrain Model (DTM) that was based on laser data with buildings masked out. This allowed for the accurate calculation of vegetation heights.
+
+This study for assessing the potential of blocks being converted to superblocks has the transferability to apply to other cities using corresponding datasets. However, it's important to note that this study only considered the opportunities of converting urban green spaces. In the future, more comprehensive evaluations that consider the interplay between public transportation, and walkability will be necessary.
+
 ## Reflection
 
--   
+-   Transferability could be applied to any other cities

@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 book:
-  title: "CASA0023-LearningDairy"
+  title: "CASA0023-LearningDiary"
   author: "Yuhan Liao"
   date: "3/23/2023"
   chapters:
@@ -16,7 +16,6 @@ book:
     - Week6-classification1.qmd
     - Week7-classification2.qmd
     - Week8-temperature.qmd
-    - summary.qmd
     - references.qmd
 
 bibliography: references.bib

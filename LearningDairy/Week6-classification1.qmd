@@ -111,7 +111,7 @@ The performance of algorithms would be also affected by the class imbalance. In 
 
 -   **Predefined Parameters**
 
-Predefined parameters are also an important impact factor of the performance of classification methods. The default values are usually suggested, but empirical testing to determine the optimum values is still needed to ensure the best performance. Notably, there has been research that avoid using predefined parameters that reduce the influence of user-set parameters[@suel2019].
+Predefined parameters are also an important impact factor on the performance of classification methods. The default values are usually suggested, but empirical testing to determine the optimum values is still needed to ensure the best performance. Notably, there has been research that avoid using predefined parameters that reduce the influence of user-set parameters[@suel2019].
 
 ## Reflection
 
