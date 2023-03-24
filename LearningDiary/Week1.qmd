@@ -89,7 +89,7 @@ Remote sensing data are based on four resolutions
 
         The observable wavelengths ranges that are not absorbed by the atmosphere and are transmitted through the atmosphere. Water vapour, ozone, carbon dioxide and atmospheric molecules blocks 100% of the gamma rays, x-rays, and most ultra-violet light.
 
-        [![Figure 1. Atmospheric Window](img/atmospheric%20window.png){width="633"}](https://gisgeography.com/atmospheric-window/)
+        [![Figure 1. Atmospheric Window](img/atmospheric%20window.png){width="527"}](https://gisgeography.com/atmospheric-window/)
 
 -   Radiometric Resolution: The ability of a sensor to identify and shows small differences.
 
@@ -101,21 +101,21 @@ We have already known that each object on the Earth has their own spectral signa
 
 @gupta2021 developed a systematic approach using Sentinel-2A spectral images to measure the forest health. The workflow could be seen as below.
 
-![](img/Week1-workflow.png){width="677"}
+![](img/Week1-workflow.png){fig-align="center" width="498"}
 
 In terms of data collection and preprocessing, @gupta2021 collected Sentinel 2A data in May and October 2019, and resampled the data into 30m, then performed atmospheric correction. At the same time, they convert the digital numbers of top-of-atmosphere reflectance into bottom-of-atmosphere, which is the true surface reflectance.
 
 Then, they used reflectance estimation to calculate ARI 1, which shows signs of stressed related to pigments. They applied the Near Infrared(NIR) band to calculating the NDVI so that greenness vegetation are measured. The structure insensitive pigment index were also calculated. These three index were all calculated from spectral bands(see as Figure 3 below). Canopy chlorophyll content is based on the inversion of PROSAIL.
 
-![](img/Week1-forest-index-1.png)
+![](img/Week1-forest-index-1.png){fig-align="center" width="449"}
 
 Finally, all the four index combined together to calculate the comprehensive Forest Health index. As we can see the figure below, different colors show various health conditions of the forest. The reddest area shows that the forests of this area are in poorest health, while the greenest area's forests are the healthiest. And we could conclude that the forest in October is healthier than forest in May. And the authors interpolate that the temperature and precipitation are strong drivers of tree growth and mortality.
 
-![](img/Week1-forest-index-2.png)
+![](img/Week1-forest-index-2.png){fig-align="center" width="435"}
 
 However, what presented above is just one application in forest health monitoring, there has been a lot of other research focusing on different forest spectral indices according to different spatial and temporal scales[@lechner2020]. For instance, while UAV data can capture millimeter-scale spatial-resolution data, the resulting remote-sensing images may contain tree branches, ground cover through gaps in the canopies, individual leaves at different angles, and shadows. But for many classification algorithm, it is better to not differentiate between individual elements of a tree.
 
-![Figure 5. Spatial and temporal scales of ecological phenomenon](img/week1-scale.png)
+![Figure 5. Spatial and temporal scales of ecological phenomenon](img/week1-scale.png){fig-align="center" width="484"}
 
 ## Reflection
 

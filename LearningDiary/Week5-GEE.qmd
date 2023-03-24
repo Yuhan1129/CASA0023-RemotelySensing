@@ -79,6 +79,6 @@ Even GEE is powerful for geospatial and big data analysis, it has several limita
 
 ## Reflection
 
--   As shown in practical, GEE though powerful in computation, it becomes quite complex and verbose when doing some simple task like masking in R or QGIS. It seems that GEE is better suited for image analysis compared to vector-based processing.
+-   As shown in practical, while Google Earth Engine (GEE) is a powerful platform for remote sensing and image analysis, it can be complex and verbose when compared to other software packages like R or QGIS, especially when performing simple tasks like masking. I think, it may because GEE is primarily designed for image analysis rather than vector-based processing.
 
--   
+-   Besides, its programming language, which is based on JavaScript, can be challenging for me. I have discovered a Python library called [geemap](https://github.com/giswqs/geemap), which I find more user-friendly than using JavaScript directly in GEE. Since I am more comfortable with Python, I plan to use geemap in my future studies to explore remote sensing and image analysis tasks further.

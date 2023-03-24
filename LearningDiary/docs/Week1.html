@@ -273,7 +273,7 @@ div.csl-indent {
 <p>The observable wavelengths ranges that are not absorbed by the atmosphere and are transmitted through the atmosphere. Water vapour, ozone, carbon dioxide and atmospheric molecules blocks 100% of the gamma rays, x-rays, and most ultra-violet light.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="https://gisgeography.com/atmospheric-window/"><img src="img/atmospheric window.png" class="img-fluid figure-img" width="633"></a></p>
+<p><a href="https://gisgeography.com/atmospheric-window/"><img src="img/atmospheric window.png" class="img-fluid figure-img" width="527"></a></p>
 <p></p><figcaption class="figure-caption">Figure 1. Atmospheric Window</figcaption><p></p>
 </figure>
 </div></li>
@@ -288,16 +288,28 @@ div.csl-indent {
 <h2 data-number="1.2" class="anchored" data-anchor-id="application"><span class="header-section-number">1.2</span> Application</h2>
 <p>We have already known that each object on the Earth has their own spectral signature, and it is also real that the same object in different status would have different spectral signatures, like healthy tree would show different colors compared to pest-infested trees. Meanwhile, forest are facing multiple threats and stressors, including deforestation, climate changes, invasive speicies and etc.<span class="citation" data-cites="lausch2016 lewis2015">(<a href="references.html#ref-lausch2016" role="doc-biblioref">Lausch et al. 2016</a>; <a href="references.html#ref-lewis2015" role="doc-biblioref">Lewis, Edwards, and Galbraith 2015</a>)</span> In this way, one important application of spectral indicators is forest monitoring.</p>
 <p><span class="citation" data-cites="gupta2021">Gupta and Pandey (<a href="references.html#ref-gupta2021" role="doc-biblioref">2021</a>)</span> developed a systematic approach using Sentinel-2A spectral images to measure the forest health. The workflow could be seen as below.</p>
-<p><img src="img/Week1-workflow.png" class="img-fluid" width="677"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/Week1-workflow.png" class="img-fluid figure-img" width="498"></p>
+</figure>
+</div>
 <p>In terms of data collection and preprocessing, <span class="citation" data-cites="gupta2021">Gupta and Pandey (<a href="references.html#ref-gupta2021" role="doc-biblioref">2021</a>)</span> collected Sentinel 2A data in May and October 2019, and resampled the data into 30m, then performed atmospheric correction. At the same time, they convert the digital numbers of top-of-atmosphere reflectance into bottom-of-atmosphere, which is the true surface reflectance.</p>
 <p>Then, they used reflectance estimation to calculate ARI 1, which shows signs of stressed related to pigments. They applied the Near Infrared(NIR) band to calculating the NDVI so that greenness vegetation are measured. The structure insensitive pigment index were also calculated. These three index were all calculated from spectral bands(see as Figure 3 below). Canopy chlorophyll content is based on the inversion of PROSAIL.</p>
-<p><img src="img/Week1-forest-index-1.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/Week1-forest-index-1.png" class="img-fluid figure-img" width="449"></p>
+</figure>
+</div>
 <p>Finally, all the four index combined together to calculate the comprehensive Forest Health index. As we can see the figure below, different colors show various health conditions of the forest. The reddest area shows that the forests of this area are in poorest health, while the greenest area’s forests are the healthiest. And we could conclude that the forest in October is healthier than forest in May. And the authors interpolate that the temperature and precipitation are strong drivers of tree growth and mortality.</p>
-<p><img src="img/Week1-forest-index-2.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/Week1-forest-index-2.png" class="img-fluid figure-img" width="435"></p>
+</figure>
+</div>
 <p>However, what presented above is just one application in forest health monitoring, there has been a lot of other research focusing on different forest spectral indices according to different spatial and temporal scales<span class="citation" data-cites="lechner2020">(<a href="references.html#ref-lechner2020" role="doc-biblioref">Lechner, Foody, and Boyd 2020</a>)</span>. For instance, while UAV data can capture millimeter-scale spatial-resolution data, the resulting remote-sensing images may contain tree branches, ground cover through gaps in the canopies, individual leaves at different angles, and shadows. But for many classification algorithm, it is better to not differentiate between individual elements of a tree.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="img/week1-scale.png" class="img-fluid figure-img"></p>
+<p><img src="img/week1-scale.png" class="img-fluid figure-img" width="484"></p>
 <p></p><figcaption class="figure-caption">Figure 5. Spatial and temporal scales of ecological phenomenon</figcaption><p></p>
 </figure>
 </div>

@@ -60,15 +60,17 @@ While there are numerous policies governing heritage conservation and monitoring
 
 Thanks to remote sensing, we could now identify surface features that may indicate the presence of hidden relics, as well as detect underground archaeological remains using infrared and thermal electromagnetic radiation.
 
-The use of satellite imagery has been crucial in decreasing uncertainty regarding the condition of heritage assets[@tapete2018]. For example, @orengo2020 used Sentinel-1 and Sentinel-2 data to detect archaeological mounds in Cholistan Desert area(Pakistan), known for its Bronze-Age Indus Civilization. They used a combination of SAR and optical bands to detect archaeological mounds from that era. Their research showed more mounds over a larger area than previously recorded and suggested a continuous shift of settlements due to changes in climate and hydrological networks throughout history.
+The use of satellite imagery has been crucial in decreasing uncertainty regarding the condition of heritage assets[@tapete2018]. For example, @orengo2020 used Sentinel-1 and Sentinel-2 data to detect archaeological mounds in Cholistan Desert area(Pakistan), known for its Bronze-Age Indus Civilization. They used a combination of SAR and optical bands to detect archaeological mounds from that era. Their research showed more mounds over a larger area than previously recorded (Figure 1) and suggested a continuous shift of settlements due to changes in climate and hydrological networks throughout history.
 
-### Monitoring And Conserving Heritage
+![Figure 1. Distribution of newly detected mounds in relation to regional landcover.](img/week4-1.jpg){fig-align="center" width="510"}
+
+### Monitoring and Conserving Heritage
 
 Satellite images can be used to monitor valuable heritage sites that are at risk of damage or destruction from climate change and natural hazards such as coastal erosion, urban sprawl, or land deformation.
 
 @tzouvaras2019 used Sentinel-1 SAR images to map the effects of an earthquake on two UNESCO heritage sites in Cyprus: Nea Paphos and the "Tombs of the Kings". By utilizing a Differential Synthetic Aperture Radar Interferometry (D-InSAR) methodology, they found that while there was little displacement on the UNESCO sites, negative vertical displacement occurred in certain parts of the historical city of Paphos. These maps(i.e. Figure 2) can provide quick and precise information to local authorities, enabling them to preserve the heritage sites to the greatest extent possible.
 
-![Figure 2. Final displacement map at (a) western Cyprus; (b) \"Nea Paphos\"; and (c) \"Tombs of the Kings\".](img/week4-2.png){fig-align="center" width="481"}
+![Figure 2. Final displacement map at (a) western Cyprus; (b) "Nea Paphos"; and (c) "Tombs of the Kings".](img/week4-2.png){fig-align="center" width="481"}
 
 ## Reflection
 
