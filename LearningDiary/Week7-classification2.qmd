@@ -75,14 +75,14 @@ FN (False Negative): models predicts negative class incorrectly
 
 ## Application
 
-Pixel based analysis is appropriate for moderate and low resolution, however, as the spatial resolution of satellite images has become finer it makes difficult to classify at the pixel level[@jovanovic2021]. It relys on spectral values of individual pixels, is not able to capture the spatial context and variations of different land covers in high-resolution images[@campbell2011]. OBIA as an alternative method could bypass the problem of pixel based analysis by by grouping a number of pixels into shapes with a meaningful representation of the objects.
+Pixel based analysis is appropriate for moderate and low resolution, however, as the spatial resolution of satellite images has become finer it makes difficult to classify at the pixel level[@jovanovic2021]. It relies on spectral values of individual pixels, is not able to capture the spatial context and variations of different land covers in high-resolution images[@campbell2011]. OBIA as an alternative method could bypass the problem of pixel based analysis by by grouping a number of pixels into shapes with a meaningful representation of the objects.
 
 Besides, OBIA has clear advantages in cooperating multi-source data, such as data obtained from Digital Terrain Maps (DTMs) and other thematic maps. This method also enhances classification tasks, especially in accurately mapping heterogeneous landscapes[@xofis2018].
 
-Recent studies have been combining OBIA and Convolutional Neural Network (CNN), which has been shown to effectively high-level image features, maintain clear boundaries of image objects[@fu2019; @wang2018]. In the research conducted by @tang2020, they combined OBIA with CNN to form an object-based CNN to extract the tea plantations(sees Figure 1). They revealed that the use of CNN in OBIA setting can effectively improve mapping accuracy, particularly in terms of geometric accuracy.
+Recent studies have been combining OBIA and Convolutional Neural Network (CNN), which has been shown to effectively extract high-level image features, maintain clear boundaries of image objects[@fu2019; @wang2018]. In the research conducted by @tang2020, they combined OBIA with CNN to form an object-based CNN to extract the tea plantations(sees Figure 1). They revealed that the use of CNN in OBIA setting can effectively improve mapping accuracy, particularly in terms of geometric accuracy.
 
 ![Figure 1. The graphical abstract](img/week7.png){fig-align="center" width="467"}
 
 ## Reflection
 
--   
+-   A very important point in image classification is transferability especially in remote sensing and image analysis applications, where the data can have significant variations in terms of spatial resolution, spectral bands, and imaging sensors. In such cases, a classifier that can transfer well across different datasets and imaging conditions is essential to ensure reliable and accurate results.

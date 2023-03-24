@@ -99,9 +99,7 @@ Remote sensing data are based on four resolutions
 
 We have already known that each object on the Earth has their own spectral signature, and it is also real that the same object in different status would have different spectral signatures, like healthy tree would show different colors compared to pest-infested trees. Meanwhile, forest are facing multiple threats and stressors, including deforestation, climate changes, invasive speicies and etc.[@lausch2016; @lewis2015] In this way, one important application of spectral indicators is forest monitoring.
 
-@gupta2021 developed a systematic approach using Sentinel-2A spectral images to measure the forest health. The workflow could be seen as below.
-
-![](img/Week1-workflow.png){fig-align="center" width="498"}
+@gupta2021 developed a systematic approach using Sentinel-2A spectral images to measure the forest health.
 
 In terms of data collection and preprocessing, @gupta2021 collected Sentinel 2A data in May and October 2019, and resampled the data into 30m, then performed atmospheric correction. At the same time, they convert the digital numbers of top-of-atmosphere reflectance into bottom-of-atmosphere, which is the true surface reflectance.
 

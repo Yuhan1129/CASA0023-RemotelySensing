@@ -101,7 +101,9 @@ DN to spectral radiance
 
 #### Image Enhancement
 
-**Contrast enhancement:** Images usually do not have good contrast. The methods: min-max, percentage linear and standard deviation, piecewise linear contrast stretch
+**Contrast enhancement:** Images usually do not have good contrast.
+
+-   The methods: min-max, percentage linear and standard deviation, piecewise linear contrast stretch
 
 **Other enhancements:**
 
@@ -141,8 +143,10 @@ Ten Landsat TM/ETM+ images were utilized to assess the impact of atmospheric cor
 
 Even the availability of ARD improve the efficiency for research, some processing is still necessary. It is stated that the variability in data availability across space and time, along with partial incompleteness caused by clouds, acquisition orbits, and observation scenarios, necessitates the use of specialized algorithms or an additional round of processing. This is required to generate spatial completeness and temporal equidistance, ensuring that the data is ready for analysis[@frantz2019]. Therefore, it is cruicial to have highly analysis ready data(**hARD**) and **hARD+**, see as figure below.
 
-![Figure1. Framework for Operational Radiometric Correct for Environmental Monitoring](img/week3-ARD.png){fig-align="center" width="586"}
+![Figure1. Framework for Operational Radiometric Correct for Environmental Monitoring](img/week3-ARD.png){fig-align="center" width="464"}
 
 ## Reflection
 
--   
+-   This course has taught us several pre-processing steps that are typically performed before applying remote sensing data, including correction, data fusion or joining, and image enhancement. Each of these steps helps to ensure the accuracy and quality of the data used in the analysis. Among these, image enhancement is actually quite important especially in urban environment, because the feature in cities would be challenging for us to distinguish and analyze in raw images.
+
+-   More interestingly, the remote sensing system are mutually constrained in terms of spatial, spectral and temporal resolution. For example, a sensor may have high spatial resolution but low spectral resolution, making it difficult to distinguish between different types of land cover. Another sensor may have high spectral resolution but low spatial resolution, making it difficult to distinguish between different features within a single pixel.By fusing data from multiple sources, we can combine the strengths of each sensor and compensate for their weaknesses.

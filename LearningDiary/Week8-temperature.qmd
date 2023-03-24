@@ -79,7 +79,7 @@ In the article proposed by @eggimann2022, they firstly identified possible super
 
 ![Figure 1. Graphical overview of the methodological workflow](img/week8.png){fig-align="center" width="500"}
 
-As we are concerning remote sensing application, so I would ignore the details of street and building information. They need the current state of the urban green space to derive potential opportunities for converting grey (or non-green) space. They therefore used a canopy height model developed by @christianginzler2021 to identify everything classified asurban green with a height above 5 cm.
+As we are concerning remote sensing application, so I would ignore the details of street and building information. They need the current state of the urban green space to derive potential opportunities for converting grey (or non-green) space. They therefore used a canopy height model developed by @christianginzler2021 to identify everything classified as urban green with a height above 5 cm.
 
 > The canopy height model, also known as the Vegetation Height Model, has been developed specifically for Switzerland. To create this model, stereo images provided by the Swiss authorities were utilized to generate a digital surface model (DSM). The DSM was subsequently normalized using a Digital Terrain Model (DTM) that was based on laser data with buildings masked out. This allowed for the accurate calculation of vegetation heights.
 
@@ -87,4 +87,6 @@ This study for assessing the potential of blocks being converted to superblocks 
 
 ## Reflection
 
--   Transferability could be applied to any other cities
+-   It's a common observation that policies often require us to reduce the Urban Heat Island effect without providing clear guidance on how to do so. This can make it difficult for cities to develop effective strategies to combat UHI.
+-   However, effective strategies for reducing the Urban Heat Island effect require a cohesive approach that spans different levels of government and stakeholders. This includes coordination between local policies, metropolitan strategies, and global policies.
+-   It's also important to note that some reducing UHI effect strategies may not be suitable for every city. For example, in practical, the research found that some Swiss city are not appropriate for employ superblocks. Therefore, before implementing any strategy, it's crucial to conduct a thorough evaluation to understand the unique characteristics of the city and to identify the most appropriate strategies.

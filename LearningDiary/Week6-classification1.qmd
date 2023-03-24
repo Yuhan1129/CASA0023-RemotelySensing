@@ -115,4 +115,4 @@ Predefined parameters are also an important impact factor on the performance of 
 
 ## Reflection
 
--   
+-   Finding a classifier that can generalize well to new data can be a challenging task. The most effective way to find a suitable classifier is by experimenting with different approaches and evaluating their performance on a test dataset. It is also essential to keep in mind the risks of overfitting and underfitting during this process. And I think that's why researchers are continually exploring new methods and techniques to improve the accuracy and generalization performance of classifiers.
